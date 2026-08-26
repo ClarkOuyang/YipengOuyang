@@ -8,31 +8,6 @@ import type { TimelineItem } from '../types'
 // ─────────────────────────────────────────────────────────────────────────────
 export const education: TimelineItem[] = [
   {
-    id: 'edu-yale',
-    role: { en: 'Yale University', zh: '耶鲁大学' },
-    organization: { en: 'Summer Research Visiting Student', zh: '暑期科研访问学生' },
-    location: 'New Haven, CT, USA',
-    start: 'Jul 2026',
-    end: 'Present',
-    logo: 'logos/yale-shield.svg',
-    detail: {
-      bullets: [
-        {
-          en: 'ALD coating for surface passivation and protection.',
-          zh: 'ALD 镀膜用于表面钝化与保护。',
-        },
-        {
-          en: 'Designed and 3D-printed an SECM reactor cell.',
-          zh: '设计并 3D 打印 SECM 反应电解池。',
-        },
-        {
-          en: 'Built a scalable perovskite-based photoelectrocatalytic (PEC) water-splitting device.',
-          zh: '搭建可放大的钙钛矿基光电催化（PEC）水分解器件。',
-        },
-      ],
-    },
-  },
-  {
     id: 'edu-nju',
     role: { en: 'Nanjing University', zh: '南京大学' },
     organization: { en: 'B.S. in New Energy Science and Engineering', zh: '新能源科学与工程 学士' },
@@ -80,6 +55,31 @@ export const education: TimelineItem[] = [
 // EDIT YOUR INTERNSHIP HERE — collapsed by default, same as Education.
 // ─────────────────────────────────────────────────────────────────────────────
 export const experience: TimelineItem[] = [
+  {
+    id: 'exp-yale',
+    role: { en: 'Yale University, Energy Center Ⅱ', zh: '耶鲁大学 Energy Center Ⅱ' },
+    organization: { en: 'Summer Research Visiting Student', zh: '暑期科研访问学生' },
+    location: 'New Haven, CT, USA',
+    start: 'Jul 2026',
+    end: 'Present',
+    logo: 'logos/yale-shield.svg',
+    detail: {
+      bullets: [
+        {
+          en: 'ALD coating for surface passivation and protection.',
+          zh: 'ALD 镀膜用于表面钝化与保护。',
+        },
+        {
+          en: 'Designed and 3D-printed an SECM reactor cell.',
+          zh: '设计并 3D 打印 SECM 反应电解池。',
+        },
+        {
+          en: 'Built a scalable perovskite-based photoelectrocatalytic (PEC) water-splitting device.',
+          zh: '搭建可放大的钙钛矿基光电催化（PEC）水分解器件。',
+        },
+      ],
+    },
+  },
   {
     id: 'exp-sunwoda',
     role: { en: 'Sunwoda Energy Technology Co., Ltd.', zh: '欣旺达能源科技股份有限公司' },
