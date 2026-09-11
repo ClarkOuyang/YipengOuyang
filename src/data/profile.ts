@@ -102,12 +102,9 @@ export const profile: Profile = {
     },
   ],
   researchInterests: [
-    { en: 'Semiconductor Photoelectrochemistry', zh: '半导体光电化学' },
-    { en: 'ALD Coating', zh: 'ALD 镀膜' },
-    { en: 'Electrochemistry', zh: '电化学' },
-    { en: '3D Printing Design', zh: '3D 打印设计' },
-    { en: 'Automation Lab', zh: '自动化实验室' },
-    { en: 'AI for Science', zh: '科学智能（AI for Science）' },
+    { en: 'Semiconductor Oxide Materials Chemistry', zh: '半导体氧化物材料化学' },
+    { en: 'Atomic Layer Deposition and Interface Engineering', zh: '原子层沉积与界面工程' },
+    { en: 'Thin-Film Structural and Chemical Characterization', zh: '薄膜结构与化学表征' },
   ],
   socials: [
     { type: 'email', href: 'mailto:231880021@smail.nju.edu.cn', label: 'Email' },
