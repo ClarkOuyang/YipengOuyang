@@ -20,19 +20,15 @@ export const interests: Interest[] = [
     icon: '💪',
   },
   {
+    label: { en: 'Listening to Music', zh: '听音乐' },
+    icon: '🎧',
+  },
+  {
     label: { en: 'Rock Climbing', zh: '攀岩' },
     icon: '🧗',
   },
   {
     label: { en: 'Table Tennis', zh: '乒乓球' },
     icon: '🏓',
-  },
-  {
-    label: { en: 'Keyboard / Piano', zh: '键盘' },
-    icon: '🎹',
-  },
-  {
-    label: { en: 'Drums', zh: '架子鼓' },
-    icon: '🥁',
   },
 ]
