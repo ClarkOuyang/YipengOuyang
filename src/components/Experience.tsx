@@ -40,7 +40,7 @@ function TimelineEntry({ item, lang }: { item: TimelineItem; lang: 'en' | 'zh' }
         <LogoBadge logo={item.logo} name={resolveText(item.role, lang)} />
         <div className="min-w-0 flex-1">
           <div className="flex flex-col gap-0.5 sm:flex-row sm:items-baseline sm:justify-between">
-            <h3 className="text-base font-bold text-brand-900 dark:text-white">
+            <h3 className="font-serif text-base font-semibold text-brand-900 dark:text-white">
               {resolveText(item.role, lang)}
             </h3>
             <span className="shrink-0 text-sm font-medium tabular-nums text-olive-600 dark:text-olive-400">
@@ -109,20 +109,20 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="scroll-mt-20 border-t border-slate-100 bg-slate-50/60 py-16 sm:py-20 dark:border-slate-800 dark:bg-white/[0.02]"
+      className="scroll-mt-20 border-t border-slate-200 bg-black/[0.02] py-16 sm:py-20 dark:border-slate-800 dark:bg-white/[0.02]"
     >
       <div className="container-page">
         <h2 className="section-heading">{getString('heading.experience', lang)}</h2>
 
         <div className="mt-8 grid gap-12 md:grid-cols-2">
           <div>
-            <h3 className="mb-5 flex items-center gap-2 text-lg font-bold text-brand-800 dark:text-brand-100">
+            <h3 className="mb-5 flex items-center gap-2 font-serif text-lg font-semibold text-brand-800 dark:text-brand-100">
               {getString('heading.education', lang)}
             </h3>
             <Timeline items={education} lang={lang} />
           </div>
           <div>
-            <h3 className="mb-5 flex items-center gap-2 text-lg font-bold text-brand-800 dark:text-brand-100">
+            <h3 className="mb-5 flex items-center gap-2 font-serif text-lg font-semibold text-brand-800 dark:text-brand-100">
               {getString('heading.internship', lang)}
             </h3>
             <Timeline items={experience} lang={lang} />

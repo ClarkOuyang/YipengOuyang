@@ -68,8 +68,8 @@ export default function Navbar({
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-slate-200/80 bg-white/80 backdrop-blur-md dark:border-slate-800 dark:bg-[#0d1320]/80'
-          : 'border-b border-transparent bg-white/0'
+          ? 'border-b border-slate-200/80 bg-paper/80 backdrop-blur-md dark:border-slate-800 dark:bg-[#0d1320]/80'
+          : 'border-b border-transparent bg-transparent'
       }`}
     >
       <nav className="container-page flex h-16 items-center justify-between">
@@ -85,7 +85,9 @@ export default function Navbar({
               .slice(0, 2)
               .join('')}
           </span>
-          <span className="hidden sm:inline">{profile.name}</span>
+          <span className="hidden font-serif text-lg font-semibold tracking-normal sm:inline">
+            {profile.name}
+          </span>
         </a>
 
         {/* Desktop links */}
@@ -127,7 +129,7 @@ export default function Navbar({
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-slate-200 bg-white md:hidden dark:border-slate-800 dark:bg-[#0d1320]">
+        <div className="border-t border-slate-200 bg-paper md:hidden dark:border-slate-800 dark:bg-[#0d1320]">
           <div className="container-page flex flex-col py-2">
             {LINKS.map((item) => (
               <a

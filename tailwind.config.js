@@ -17,8 +17,19 @@ export default {
           'sans-serif',
         ],
         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'monospace'],
+        serif: [
+          'Newsreader',
+          'ui-serif',
+          'Georgia',
+          'Cambria',
+          'Times New Roman',
+          'Times',
+          'serif',
+        ],
       },
       colors: {
+        // Warm off-white "paper" page background for the academic-journal look.
+        paper: '#F7F3EA',
         // Colors are driven by CSS variables (defined in src/index.css) so the
         // accent can be changed at runtime. Each shade = rgb(var(--x-NN) / a).
         brand: {

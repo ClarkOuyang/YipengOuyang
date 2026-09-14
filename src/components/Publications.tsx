@@ -68,7 +68,7 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
   }
 
   return (
-    <article className="group relative scroll-mt-20 rounded-xl border border-slate-200 bg-white p-5 transition-colors hover:border-brand-300 dark:border-slate-800 dark:bg-slate-900/40 dark:hover:border-brand-600">
+    <article className="paper-panel group relative scroll-mt-20 p-5 transition-colors hover:border-brand-300 dark:hover:border-brand-600">
       <div className="flex gap-4">
         {/* Year rail */}
         <div className="hidden w-14 shrink-0 flex-col items-center sm:flex">
@@ -82,7 +82,7 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
 
         <div className="min-w-0 flex-1">
           <div className="flex items-start gap-2">
-            <h3 className="text-[15px] font-semibold leading-snug text-brand-900 dark:text-white">
+            <h3 className="font-serif text-base font-semibold leading-snug text-brand-900 dark:text-white">
               {resolveText(pub.title, lang)}
             </h3>
             {pub.highlight && (
@@ -195,7 +195,7 @@ export default function Publications() {
         {byYear.map(([year, pubs]) => (
           <div key={year}>
             <div className="mb-3 flex items-center gap-3">
-              <h3 className="text-xl font-bold text-brand-800 dark:text-brand-100">
+              <h3 className="font-serif text-xl font-semibold text-brand-800 dark:text-brand-100">
                 {year}
               </h3>
               <span className="h-px flex-1 bg-slate-200 dark:bg-slate-700" />

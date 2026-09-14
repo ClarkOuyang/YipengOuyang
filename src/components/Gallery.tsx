@@ -41,7 +41,7 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
   const next = () => setIdx((i) => (i + 1) % images.length)
 
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-soft dark:border-slate-800 dark:bg-slate-900/40">
+    <div className="paper-panel p-4">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
         {/* Left: photo frame (half the previous size), content never cropped. */}
         <div className="relative w-full shrink-0 overflow-hidden rounded-lg bg-slate-100 sm:w-[360px] dark:bg-slate-800">
@@ -96,7 +96,7 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
 
         {/* Right: text content (wider now that the photo is smaller). */}
         <div className="min-w-0 flex-1">
-          <h3 className="text-base font-semibold leading-snug text-brand-900 dark:text-white">
+          <h3 className="font-serif text-lg font-semibold leading-snug text-brand-900 dark:text-white">
             {resolveText(p.title, lang)}
           </h3>
           <p className="mt-1 text-xs font-medium text-olive-600 dark:text-olive-400">

@@ -12,7 +12,6 @@ export default function Hero() {
         {/* Photo */}
         <div className="mx-auto flex flex-col items-center gap-4 lg:mx-0 lg:items-start">
           <div className="relative">
-            <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-brand-500 to-olive-500 opacity-20 blur" />
             <img
               src={withBase(profile.photo)}
               alt={`Portrait of ${profile.name}`}
@@ -22,7 +21,7 @@ export default function Hero() {
                 if (el.src.endsWith(fallback)) return
                 el.src = fallback
               }}
-              className="relative h-40 w-40 rounded-2xl border border-slate-200 object-cover shadow-soft sm:h-48 sm:w-48 lg:h-56 lg:w-56 dark:border-slate-700"
+              className="relative h-40 w-40 rounded-md border border-slate-300 object-cover sm:h-48 sm:w-48 lg:h-56 lg:w-56 dark:border-slate-700"
             />
           </div>
           <div className="w-full space-y-1 text-sm text-slate-600 dark:text-slate-300">
@@ -74,7 +73,7 @@ export default function Hero() {
 
         {/* Text */}
         <div className="min-w-0">
-          <h1 className="text-3xl font-extrabold tracking-tight text-brand-900 sm:text-4xl dark:text-white">
+          <h1 className="font-serif text-4xl font-semibold text-brand-900 sm:text-[42px] dark:text-white">
             {profile.fullName ?? profile.name}
           </h1>
 
@@ -83,7 +82,7 @@ export default function Hero() {
             {profile.affiliations.map((a, i) => (
               <div key={i} className="border-l-2 border-brand-200 pl-4 dark:border-brand-700">
                 <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-                  <span className="text-base font-bold text-brand-900 dark:text-white">
+                  <span className="font-serif text-base font-semibold text-brand-900 dark:text-white">
                     {resolveText(a.school, lang)}
                   </span>
                   <span className="text-sm font-medium text-slate-600 dark:text-slate-300">

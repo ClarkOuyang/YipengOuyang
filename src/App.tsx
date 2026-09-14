@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-white text-slate-800 dark:bg-[#0d1320] dark:text-slate-200">
+      <div className="min-h-screen bg-paper text-slate-800 dark:bg-[#0d1320] dark:text-slate-200">
         <Navbar theme={theme} onToggleTheme={toggleTheme} />
         <main>
           <Hero />

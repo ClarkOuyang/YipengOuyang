@@ -17,7 +17,7 @@ export default function Interests() {
               href={it.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 rounded-full border border-brand-200 bg-brand-50 px-4 py-2 text-sm font-medium text-brand-700 transition-colors hover:border-brand-400 hover:bg-brand-100 dark:border-brand-700 dark:bg-brand-800/40 dark:text-brand-100"
+              className="group inline-flex items-center gap-2 rounded-full border border-slate-300 bg-transparent px-4 py-2 text-sm font-medium text-slate-700 transition-colors hover:border-brand-500 hover:text-brand-700 dark:border-slate-600 dark:text-slate-200 dark:hover:border-brand-400 dark:hover:text-white"
             >
               <span className="text-lg leading-none">{it.icon}</span>
               {resolveText(it.label, lang)}
@@ -26,7 +26,7 @@ export default function Interests() {
           ) : (
             <span
               key={i}
-              className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-600 dark:border-slate-700 dark:bg-slate-900/40 dark:text-slate-300"
+              className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-transparent px-4 py-2 text-sm font-medium text-slate-600 dark:border-slate-600 dark:text-slate-300"
             >
               <span className="text-lg leading-none">{it.icon}</span>
               {resolveText(it.label, lang)}
