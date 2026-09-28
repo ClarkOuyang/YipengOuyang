@@ -46,8 +46,8 @@ export const profile: Profile = {
         zh: '专业：新能源科学与工程',
       },
       direction: {
-        en: 'Research: Electrocatalysis for water splitting and OER mechanism study',
-        zh: '研究方向：电解水制氢与 OER 机理研究',
+        en: 'Research: Electrocatalytic materials and characterization',
+        zh: '研究方向：电催化材料与表征',
       },
     },
     {
@@ -89,16 +89,20 @@ export const profile: Profile = {
   photo: '/images/avatar.jpg',
   bio: [
     {
-      en: 'I am Yipeng Ouyang, an undergraduate in New Energy Science and Engineering at Nanjing University, supervised by Prof. Zhaosheng Li and Prof. Jianyong Feng, affiliated with Group of Prof. Zhigang Zou. I work across two complementary directions that converge on clean-energy conversion: (1) semiconductor optoelectronic materials and devices, and (2) photoelectrocatalysis / electrocatalysis for solar-driven hydrogen production.',
-      zh: '我是欧阳益鹏，南京大学新能源科学与工程专业本科生，师从李朝升教授与冯建勇教授，隶属于邹志刚教授课题组。我的研究沿两条相互支撑、共同指向清洁能源转化的主线展开：（1）半导体光电材料与器件；（2）面向太阳能制氢的光电催化 / 电催化。',
+      en: 'I am Yipeng Ouyang, an undergraduate in New Energy Science and Engineering at Nanjing University, supervised by Prof. Zhaosheng Li and Prof. Jianyong Feng in the group of Prof. Zhigang Zou. In summer 2026, I joined the group of Prof. Shu Hu at Yale University as a summer research intern. I am applying for Ph.D. programs in semiconductor materials, aiming to study how the synthesis, surfaces and interfaces of semiconductor materials govern the performance and stability of devices.',
+      zh: '我是欧阳益鹏，南京大学新能源科学与工程专业本科生，师从李朝升教授与冯建勇教授，隶属于邹志刚教授课题组。2026 年夏天，我加入耶鲁大学胡澍教授课题组进行暑期科研。我正在申请半导体材料方向的博士项目，希望研究半导体材料的合成、表面与界面如何决定器件的性能与稳定性。',
     },
     {
-      en: 'On the electrocatalysis side, I engineer cobalt-based composite catalysts (CSO) that overcome the intrinsic instability of non-precious metals in acidic oxygen evolution (OER), building durable catalyst-coated membranes for proton exchange membrane water electrolysis (PEMWE) — over 800 h stable operation at 100 mA cm⁻², 1.70 V cell voltage. Characterization spans TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR, with RRDE quantification of surface-pH evolution.',
-      zh: '在电催化方向，我设计钴基复合催化剂（CSO），克服非贵金属在酸性析氧反应（OER）中的本征不稳定性，构建用于质子交换膜水电解（PEMWE）的耐久催化层膜——在 100 mA cm⁻² 下稳定运行超过 800 小时，槽电压 1.70 V。表征涵盖 TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR，并以 RRDE 量化表面 pH 演变。',
+      en: 'My research began in electrocatalysis, which gave me solid training in electrochemistry and materials characterization. At Nanjing University, I engineer cobalt-based composite catalysts (CSO) that overcome the intrinsic instability of non-precious metals in acidic oxygen evolution (OER), and build durable catalyst-coated membranes for proton exchange membrane water electrolysis (PEMWE), reaching over 800 h of stable operation at 100 mA cm⁻² with a cell voltage of 1.70 V.',
+      zh: '我的科研从电催化起步，这段经历让我在电化学与材料表征方面打下了扎实的基础。在南京大学，我设计钴基复合催化剂（CSO），克服非贵金属在酸性析氧反应（OER）中的本征不稳定性，并构建用于质子交换膜水电解（PEMWE）的耐久催化层膜，在 100 mA cm⁻² 下稳定运行超过 800 小时，槽电压 1.70 V。',
     },
     {
-      en: 'On the semiconductor side, my Yale summer research proceeds in three stages: (1) ALD coating for surface passivation and protection, (2) designing and 3D-printing an SECM reactor cell, and (3) building a scalable perovskite-based photoelectrocatalytic (PEC) water-splitting device. I am equally drawn to semiconductor device physics, heterojunction engineering and materials synthesis as levers for efficient solar-to-fuel conversion.',
-      zh: '在半导体方向，我在耶鲁的暑期研究按以下顺序推进：（1）用于表面钝化与保护的 ALD 镀膜；（2）设计并 3D 打印 SECM 反应电解池；（3）搭建可放大的钙钛矿基光电催化（PEC）水分解器件。我也同样着迷于半导体器件物理、异质结工程与材料合成，将其视为实现高效太阳能—燃料转换的关键抓手。',
+      en: 'At Yale, my work moved to semiconductors, in three parts: (1) a scalable perovskite–Si photoelectrochemical (PEC) cell, which uses photoelectrochemistry as a way to probe how semiconductor absorbers behave in real operating conditions; (2) atomic layer deposition (ALD) coatings for surface passivation and protection of semiconductor electrodes; and (3) the design and 3D printing of a scanning electrochemical microscopy (SECM) cell for spatially resolved measurements.',
+      zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）可放大的钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）用于半导体电极表面钝化与保护的原子层沉积（ALD）镀膜；（3）设计并 3D 打印扫描电化学显微镜（SECM）电解池，用于空间分辨测量。',
+    },
+    {
+      en: 'Skills — Characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR. Si processing and thin films: laser cutting, busbar removal, HF etching, PVD deposition, atomic layer deposition (ALD) and photoresist edge sealing. Electrochemistry: CV, LSV, EIS, chronopotentiometry, RRDE, SECM, photoelectrochemical testing, and PEMWE/AEMWE cell assembly and testing. Design: CAD modeling in SolidWorks and 3D printing of electrochemical cells.',
+      zh: '技能：表征——TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR；硅加工与薄膜——激光切割、去除 busbar、氢氟酸（HF）清洗、PVD 沉积、原子层沉积（ALD）与光刻胶封边；电化学——CV、LSV、EIS、计时电位法、RRDE、SECM、光电化学测试，以及 PEMWE / AEMWE 电解池组装与测试；设计——使用 SolidWorks 进行电化学电解池的 CAD 建模与 3D 打印。',
     },
   ],
   researchInterests: [
