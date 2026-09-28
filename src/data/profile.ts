@@ -88,8 +88,8 @@ export const profile: Profile = {
       zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）用于碱性光解水的可放大钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）原子层沉积（ALD）TiO₂ 镀膜与物理气相沉积（PVD）镍，用于半导体电极的保护、表面钝化与改善接触；（3）设计并 3D 打印原位扫描电化学显微镜（SECM）电解池，用于空间分辨测量。',
     },
     {
-      en: 'Skills\n1. Materials characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR.\n2. Si processing: ALD, PVD, BOE etching, NMP stripping and photoresist edge sealing.\n3. Electrochemical testing: proficient in a wide range of electrochemical characterization techniques, and in analyzing reaction kinetics from the results.\n4. Device design and assembly: CAD design, 3D printing and hands-on assembly of sealed devices.',
-      zh: '技能\n1. 材料表征方法：TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR。\n2. 硅加工：ALD、PVD、BOE 刻蚀、NMP 去胶与光刻胶封边。\n3. 电化学测试方法：熟练掌握各种电化学表征方法，并能结合测试结果分析反应动力学。\n4. 器件设计与组装：CAD 设计、3D 打印与密封器件的实际组装。',
+      en: 'Skills\n1. Materials characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR.\n2. Si processing: ALD, PVD, BOE etching and photoresist edge sealing.\n3. Electrochemical testing: proficient in a wide range of electrochemical characterization techniques, and in analyzing reaction kinetics from the results.\n4. Device design and assembly: CAD design, 3D printing and hands-on assembly of sealed devices.',
+      zh: '技能\n1. 材料表征方法：TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR。\n2. 硅加工：ALD、PVD、BOE 刻蚀与光刻胶封边。\n3. 电化学测试方法：熟练掌握各种电化学表征方法，并能结合测试结果分析反应动力学。\n4. 器件设计与组装：CAD 设计、3D 打印与密封器件的实际组装。',
     },
   ],
   researchInterests: [
