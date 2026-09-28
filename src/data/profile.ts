@@ -93,9 +93,10 @@ export const profile: Profile = {
     },
   ],
   researchInterests: [
-    { en: 'Semiconductor Oxide Materials Chemistry', zh: '半导体氧化物材料化学' },
-    { en: 'Atomic Layer Deposition and Interface Engineering', zh: '原子层沉积与界面工程' },
-    { en: 'Thin-Film Structural and Chemical Characterization', zh: '薄膜结构与化学表征' },
+    { en: 'Semiconductor Materials', zh: '半导体材料' },
+    { en: 'Thin-Film Growth', zh: '薄膜生长' },
+    { en: '2D Nanomaterials', zh: '二维纳米材料' },
+    { en: 'Photovoltaic Devices', zh: '光伏器件' },
   ],
   socials: [
     { type: 'email', href: 'mailto:yipeng.ouyang@yale.edu', label: 'Email' },
