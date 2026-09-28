@@ -20,20 +20,6 @@ export const news: NewsItem[] = [
     tag: { en: 'Experience', zh: '经历' },
   },
   {
-    id: 'manuscript-2026',
-    date: 'Late 2026',
-    iso: '2026-11-01',
-    title: {
-      en: 'Manuscript in preparation on non-precious-metal PEMWE',
-      zh: '非贵金属 PEMWE 论文在撰写中',
-    },
-    description: {
-      en: 'Our work on a cobalt-based composite catalyst (CSO) for durable acidic OER is being prepared for submission (joint first author).',
-      zh: '我们关于钴基复合催化剂（CSO）用于稳定酸性 OER 的研究正在准备投稿（共同一作）。',
-    },
-    tag: { en: 'Publication', zh: '论文' },
-  },
-  {
     id: 'research-2025',
     date: 'Feb 2025',
     iso: '2025-02-01',
