@@ -93,7 +93,7 @@ export const profile: Profile = {
     },
   ],
   researchInterests: [
-    { en: 'Semiconductor Materials', zh: '半导体材料' },
+    { en: 'Semiconductor Surfaces & Interfaces', zh: '半导体表面与界面' },
     { en: 'Thin-Film Growth', zh: '薄膜生长' },
     { en: '2D Nanomaterials', zh: '二维纳米材料' },
     { en: 'Photovoltaic Devices', zh: '光伏器件' },
