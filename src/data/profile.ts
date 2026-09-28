@@ -68,23 +68,10 @@ export const profile: Profile = {
     },
   ],
   // Contact (shown under the portrait).
-  email: '231880021@smail.nju.edu.cn',
-  emailGmail: 'c2914154829@gmail.com',
+  email: 'yipeng.ouyang@yale.edu',
+  emailGmail: '231880021@smail.nju.edu.cn',
   phone: '+86 13927434134',
   phoneTW: '+886 0912841316',
-  addresses: [
-    {
-      label: { en: 'Address 1', zh: '地址一' },
-      lines: '14 Wensan 3rd St, Guishan Dist., Taoyuan City, Taiwan',
-      postalCode: '333',
-    },
-    {
-      label: { en: 'Address 2', zh: '地址二' },
-      lines:
-        '201, Block H, Haitong Yuan, Sijihuacheng, Bantian St., Longgang Dist., Shenzhen City, Guangdong Prov., China',
-      postalCode: '518129',
-    },
-  ],
   // Put your photo at public/images/avatar.jpg (square, ~400×400 looks best).
   photo: '/images/avatar.jpg',
   bio: [
@@ -111,7 +98,7 @@ export const profile: Profile = {
     { en: 'Thin-Film Structural and Chemical Characterization', zh: '薄膜结构与化学表征' },
   ],
   socials: [
-    { type: 'email', href: 'mailto:231880021@smail.nju.edu.cn', label: 'Email' },
+    { type: 'email', href: 'mailto:yipeng.ouyang@yale.edu', label: 'Email' },
     { type: 'cv', href: '/cv.pdf', label: 'Curriculum Vitae' },
   ],
 }
