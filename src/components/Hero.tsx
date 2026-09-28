@@ -136,15 +136,15 @@ export default function Hero() {
               </span>
             ))}
           </div>
+        </div>
 
-          {/* Bio */}
-          <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-slate-600 dark:text-slate-300">
-            {profile.bio.map((para, i) => (
-              <p key={i} className="whitespace-pre-line">
-                {resolveText(para, lang)}
-              </p>
-            ))}
-          </div>
+        {/* Bio — spans both columns on wide screens so it fills the space under the contact info */}
+        <div className="space-y-4 text-[15px] leading-relaxed text-slate-600 lg:col-span-2 dark:text-slate-300">
+          {profile.bio.map((para, i) => (
+            <p key={i} className="whitespace-pre-line">
+              {resolveText(para, lang)}
+            </p>
+          ))}
         </div>
       </div>
     </section>
