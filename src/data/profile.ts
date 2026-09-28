@@ -84,8 +84,8 @@ export const profile: Profile = {
       zh: '我的科研从电催化起步，这段经历让我在电化学与材料表征方面打下了扎实的基础。在南京大学，我设计钴基复合催化剂（CSO），克服非贵金属在酸性析氧反应（OER）中的本征不稳定性，并构建用于质子交换膜水电解（PEMWE）的耐久催化层膜，在 100 mA cm⁻² 下稳定运行超过 800 小时，槽电压 1.70 V。',
     },
     {
-      en: 'At Yale, my work moved to semiconductors, in three parts: (1) a scalable perovskite–Si photoelectrochemical (PEC) cell for alkaline water splitting, which uses photoelectrochemistry as a way to probe how semiconductor absorbers behave in real operating conditions; (2) atomic layer deposition (ALD) of TiO₂ coatings for the protection and surface passivation of semiconductor electrodes; and (3) the design and 3D printing of a scanning electrochemical microscopy (SECM) cell for in-situ, spatially resolved measurements.',
-      zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）用于碱性光解水的可放大钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）原子层沉积（ALD）TiO₂ 镀膜，用于半导体电极的保护与表面钝化；（3）设计并 3D 打印扫描电化学显微镜（SECM）电解池，用于原位、空间分辨测量。',
+      en: 'At Yale, my work moved to semiconductors, in three parts: (1) a scalable perovskite–Si photoelectrochemical (PEC) cell for alkaline water splitting, which uses photoelectrochemistry as a way to probe how semiconductor absorbers behave in real operating conditions; (2) atomic layer deposition (ALD) of TiO₂ coatings and physical vapor deposition (PVD) of nickel for the protection, surface passivation and better contact of semiconductor electrodes; and (3) the design and 3D printing of an in-situ scanning electrochemical microscopy (SECM) cell for spatially resolved measurements.',
+      zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）用于碱性光解水的可放大钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）原子层沉积（ALD）TiO₂ 镀膜与物理气相沉积（PVD）镍，用于半导体电极的保护、表面钝化与改善接触；（3）设计并 3D 打印原位扫描电化学显微镜（SECM）电解池，用于空间分辨测量。',
     },
     {
       en: 'Skills\n1. Materials characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR.\n2. Si processing: ALD, PVD, BOE etching, NMP stripping and photoresist edge sealing.\n3. Electrochemical testing: proficient in a wide range of electrochemical characterization techniques, and in analyzing reaction kinetics from the results.\n4. Device design and assembly: CAD design, 3D printing and hands-on assembly of sealed devices.',
