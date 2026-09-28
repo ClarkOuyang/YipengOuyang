@@ -1,5 +1,5 @@
 import { profile } from '../data/profile'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
 import { useLang, resolveText } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
 import { withBase } from '../lib/url'
@@ -105,6 +105,10 @@ export default function Hero() {
                         className="font-medium text-brand-600 hover:underline dark:text-brand-300"
                       >
                         {resolveText(part.text, lang)}
+                        <ArrowUpRight
+                          aria-hidden="true"
+                          className="ml-px inline-block h-3 w-3 -translate-y-1.5 align-baseline"
+                        />
                       </a>
                     ) : (
                       <span
