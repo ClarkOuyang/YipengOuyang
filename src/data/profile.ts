@@ -97,12 +97,12 @@ export const profile: Profile = {
       zh: '我的科研从电催化起步，这段经历让我在电化学与材料表征方面打下了扎实的基础。在南京大学，我设计钴基复合催化剂（CSO），克服非贵金属在酸性析氧反应（OER）中的本征不稳定性，并构建用于质子交换膜水电解（PEMWE）的耐久催化层膜，在 100 mA cm⁻² 下稳定运行超过 800 小时，槽电压 1.70 V。',
     },
     {
-      en: 'At Yale, my work moved to semiconductors, in three parts: (1) a scalable perovskite–Si photoelectrochemical (PEC) cell, which uses photoelectrochemistry as a way to probe how semiconductor absorbers behave in real operating conditions; (2) atomic layer deposition (ALD) coatings for surface passivation and protection of semiconductor electrodes; and (3) the design and 3D printing of a scanning electrochemical microscopy (SECM) cell for spatially resolved measurements.',
-      zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）可放大的钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）用于半导体电极表面钝化与保护的原子层沉积（ALD）镀膜；（3）设计并 3D 打印扫描电化学显微镜（SECM）电解池，用于空间分辨测量。',
+      en: 'At Yale, my work moved to semiconductors, in three parts: (1) a scalable perovskite–Si photoelectrochemical (PEC) cell for alkaline water splitting, which uses photoelectrochemistry as a way to probe how semiconductor absorbers behave in real operating conditions; (2) atomic layer deposition (ALD) of TiO₂ coatings for the protection and surface passivation of semiconductor electrodes; and (3) the design and 3D printing of a scanning electrochemical microscopy (SECM) cell for in-situ, spatially resolved measurements.',
+      zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）用于碱性光解水的可放大钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）原子层沉积（ALD）TiO₂ 镀膜，用于半导体电极的保护与表面钝化；（3）设计并 3D 打印扫描电化学显微镜（SECM）电解池，用于原位、空间分辨测量。',
     },
     {
-      en: 'Skills — Characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR. Si processing and thin films: laser cutting, busbar removal, HF etching, PVD deposition, atomic layer deposition (ALD) and photoresist edge sealing. Electrochemistry: CV, LSV, EIS, chronopotentiometry, RRDE, SECM, photoelectrochemical testing, and PEMWE/AEMWE cell assembly and testing. Design: CAD modeling in SolidWorks and 3D printing of electrochemical cells.',
-      zh: '技能：表征——TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR；硅加工与薄膜——激光切割、去除 busbar、氢氟酸（HF）清洗、PVD 沉积、原子层沉积（ALD）与光刻胶封边；电化学——CV、LSV、EIS、计时电位法、RRDE、SECM、光电化学测试，以及 PEMWE / AEMWE 电解池组装与测试；设计——使用 SolidWorks 进行电化学电解池的 CAD 建模与 3D 打印。',
+      en: 'Skills\n1. Materials characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR.\n2. Si processing: ALD, PVD, BOE etching, NMP stripping and photoresist edge sealing.\n3. Electrochemical testing: proficient in a wide range of electrochemical characterization techniques, and in analyzing reaction kinetics from the results.\n4. Device design and assembly: CAD design (SolidWorks) and hands-on assembly of sealed devices.',
+      zh: '技能\n1. 材料表征方法：TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR。\n2. 硅加工：ALD、PVD、BOE 刻蚀、NMP 去胶与光刻胶封边。\n3. 电化学测试方法：熟练掌握各种电化学表征方法，并能结合测试结果分析反应动力学。\n4. 器件设计与组装：擅长密封器件的 CAD 设计（SolidWorks）与实际组装。',
     },
   ],
   researchInterests: [

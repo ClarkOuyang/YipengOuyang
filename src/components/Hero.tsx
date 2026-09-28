@@ -140,7 +140,9 @@ export default function Hero() {
           {/* Bio */}
           <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-slate-600 dark:text-slate-300">
             {profile.bio.map((para, i) => (
-              <p key={i}>{resolveText(para, lang)}</p>
+              <p key={i} className="whitespace-pre-line">
+                {resolveText(para, lang)}
+              </p>
             ))}
           </div>
         </div>
