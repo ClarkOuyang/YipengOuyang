@@ -107,7 +107,16 @@ export default function Hero() {
                         {resolveText(part.text, lang)}
                       </a>
                     ) : (
-                      <span key={pi}>{resolveText(part.text, lang)}</span>
+                      <span
+                        key={pi}
+                        className={
+                          part.highlight
+                            ? 'font-medium text-brand-600 dark:text-brand-300'
+                            : undefined
+                        }
+                      >
+                        {resolveText(part.text, lang)}
+                      </span>
                     )
                   )}
                 </p>

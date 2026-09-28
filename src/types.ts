@@ -35,6 +35,8 @@ export interface AffiliationLink {
 export interface SupervisorPart {
   text: Bilingual
   href?: string
+  /** Style the run like a link (e.g. a supervisor name) even without an `href`. */
+  highlight?: boolean
 }
 
 export interface HeroAffiliation {

@@ -34,7 +34,7 @@ export const profile: Profile = {
           href: 'https://scholar.google.com/citations?user=e5fz9VAAAAAJ&hl=zh-CN',
         },
         { text: { en: ' and ', zh: '、' } },
-        { text: { en: 'Jianyong Feng', zh: '冯建勇' } },
+        { text: { en: 'Jianyong Feng', zh: '冯建勇' }, highlight: true },
         { text: { en: ', affiliated with Group of ', zh: '，隶属于' } },
         {
           text: { en: 'Zhigang Zou', zh: '邹志刚教授课题组' },
