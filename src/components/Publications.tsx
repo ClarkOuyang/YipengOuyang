@@ -111,7 +111,8 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
                   {l.label ?? getString(LINK_LABELS[l.type], lang)}
                 </a>
               )
-            })}          </div>
+            })}
+          </div>
         </div>
       </div>
     </article>
