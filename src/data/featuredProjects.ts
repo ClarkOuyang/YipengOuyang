@@ -52,6 +52,7 @@ export const featuredProjects: FeaturedProject[] = [
     period: 'Yale, 2026',
     sortKey: '2026-07',
     photo: '', // TODO: add /public/projects/pec.jpg
+    photos: ['projects/pec-cad.jpg', 'projects/pec-01.jpg', 'projects/pec-02.jpg'],
     detail: {
       description: {
         en: 'Summer research at Yale University on photoelectrocatalytic water splitting in alkaline water. Designed perovskite–Si photoelectrocatalysis (PEC) and fabricated Pt-coated AEMWE anodes by sputtering.',
