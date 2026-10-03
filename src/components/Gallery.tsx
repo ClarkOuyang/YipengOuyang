@@ -8,7 +8,7 @@ import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react'
 
 export default function Gallery() {
   const { lang } = useLang()
-  const sorted = [...featuredProjects].sort((a, b) => (a.sortKey < b.sortKey ? 1 : -1))
+  const sorted = featuredProjects
 
   return (
     <section id="gallery" className="container-page scroll-mt-20 py-16 sm:py-20">

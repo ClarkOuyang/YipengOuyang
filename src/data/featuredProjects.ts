@@ -2,71 +2,12 @@ import type { FeaturedProject } from '../types'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // EDIT YOUR RESEARCH PROJECTS HERE
-// One representative photo per project. Sorted newest-first by `sortKey`
-// (ISO-ish "YYYY-MM"). Drop the photo at public/projects/<file> and update
+// One representative photo per project. Shown in the order listed below;
+// `sortKey` ("YYYY-MM") is kept for reference only. Drop the photo at public/projects/<file> and update
 // `photo` once you have it — a placeholder is shown until then.
 // `detail` (description/keywords/status) is collapsed by default in the UI.
 // ─────────────────────────────────────────────────────────────────────────────
 export const featuredProjects: FeaturedProject[] = [
-  {
-    id: 'proj-ald',
-    title: { en: 'ALD Coating & Semiconductor Processing', zh: 'ALD 镀膜与半导体加工' },
-    period: 'Yale, 2026',
-    sortKey: '2026-09',
-    photo: '', // TODO: add /public/projects/ald.jpg
-  },
-  {
-    id: 'proj-secm',
-    title: { en: 'SECM Cell 3D Printing Design', zh: 'SECM 电解池 3D 打印设计' },
-    period: 'Yale, 2026',
-    sortKey: '2026-08',
-    photo: '', // TODO: add /public/projects/secm.jpg
-    photos: [
-      'projects/secm-cell-photos.jpg',
-      'projects/secm-solid-assembly.png',
-      'projects/secm-transparent-assembly.png',
-      'projects/secm-01.jpg',
-      'projects/secm-02.jpg',
-      'projects/secm-04.jpg',
-      'projects/secm-05.jpg',
-    ],
-    detail: {
-      description: {
-        en: 'Designed and 3D-printed scanning electrocatalysis microscopy (SECM) reactor cells for photoelectrocatalytic water-splitting studies.',
-        zh: '设计并 3D 打印扫描电化学显微镜（SECM）反应电解池，用于光电催化水分解研究。',
-      },
-      keywords: [
-        { en: 'SECM', zh: 'SECM' },
-        { en: '3D Printing', zh: '3D 打印' },
-        { en: 'Reactor Cell', zh: '反应电解池' },
-      ],
-      status: { en: 'Yale summer research (2026)', zh: '耶鲁暑期研究（2026）' },
-    },
-  },
-  {
-    id: 'proj-pec',
-    title: {
-      en: 'Scalable Perovskite-Based Photoelectrocatalytic (PEC) Water Splitting',
-      zh: '可放大钙钛矿基光电催化（PEC）水分解',
-    },
-    period: 'Yale, 2026',
-    sortKey: '2026-07',
-    photo: '', // TODO: add /public/projects/pec.jpg
-    photos: ['projects/pec-cad.jpg', 'projects/pec-01.jpg', 'projects/pec-02.jpg'],
-    detail: {
-      description: {
-        en: 'Summer research at Yale University on photoelectrocatalytic water splitting in alkaline water. Designed perovskite–Si photoelectrocatalysis (PEC) and fabricated Pt-coated AEMWE anodes by sputtering.',
-        zh: '耶鲁大学暑期研究，面向碱性水环境中的光电催化水分解。设计钙钛矿—硅光电催化（PEC），并以溅射法制备 Pt 修饰的 AEMWE 阳极。',
-      },
-      keywords: [
-        { en: 'Photoelectrocatalysis', zh: '光电催化' },
-        { en: 'Perovskite–Si', zh: '钙钛矿—硅' },
-        { en: 'PEC', zh: 'PEC' },
-        { en: 'AEMWE', zh: 'AEMWE' },
-      ],
-      status: { en: 'Yale summer research (2026)', zh: '耶鲁暑期研究（2026）' },
-    },
-  },
   {
     id: 'proj-pemwe',
     title: {
@@ -102,6 +43,65 @@ export const featuredProjects: FeaturedProject[] = [
         en: 'Manuscript in preparation (joint first author)',
         zh: '论文在投（共同一作）',
       },
+    },
+  },
+  {
+    id: 'proj-pec',
+    title: {
+      en: 'Scalable Perovskite-Based Photoelectrocatalytic (PEC) Water Splitting',
+      zh: '可放大钙钛矿基光电催化（PEC）水分解',
+    },
+    period: 'Yale, 2026',
+    sortKey: '2026-07',
+    photo: '', // TODO: add /public/projects/pec.jpg
+    photos: ['projects/pec-cad.jpg', 'projects/pec-01.jpg', 'projects/pec-02.jpg'],
+    detail: {
+      description: {
+        en: 'Summer research at Yale University on photoelectrocatalytic water splitting in alkaline water. Designed perovskite–Si photoelectrocatalysis (PEC) and fabricated Pt-coated AEMWE anodes by sputtering.',
+        zh: '耶鲁大学暑期研究，面向碱性水环境中的光电催化水分解。设计钙钛矿—硅光电催化（PEC），并以溅射法制备 Pt 修饰的 AEMWE 阳极。',
+      },
+      keywords: [
+        { en: 'Photoelectrocatalysis', zh: '光电催化' },
+        { en: 'Perovskite–Si', zh: '钙钛矿—硅' },
+        { en: 'PEC', zh: 'PEC' },
+        { en: 'AEMWE', zh: 'AEMWE' },
+      ],
+      status: { en: 'Yale summer research (2026)', zh: '耶鲁暑期研究（2026）' },
+    },
+  },
+  {
+    id: 'proj-ald',
+    title: { en: 'ALD Coating & Semiconductor Processing', zh: 'ALD 镀膜与半导体加工' },
+    period: 'Yale, 2026',
+    sortKey: '2026-09',
+    photo: '', // TODO: add /public/projects/ald.jpg
+  },
+  {
+    id: 'proj-secm',
+    title: { en: 'SECM Cell 3D Printing Design', zh: 'SECM 电解池 3D 打印设计' },
+    period: 'Yale, 2026',
+    sortKey: '2026-08',
+    photo: '', // TODO: add /public/projects/secm.jpg
+    photos: [
+      'projects/secm-cell-photos.jpg',
+      'projects/secm-solid-assembly.png',
+      'projects/secm-transparent-assembly.png',
+      'projects/secm-01.jpg',
+      'projects/secm-02.jpg',
+      'projects/secm-04.jpg',
+      'projects/secm-05.jpg',
+    ],
+    detail: {
+      description: {
+        en: 'Designed and 3D-printed scanning electrocatalysis microscopy (SECM) reactor cells for photoelectrocatalytic water-splitting studies.',
+        zh: '设计并 3D 打印扫描电化学显微镜（SECM）反应电解池，用于光电催化水分解研究。',
+      },
+      keywords: [
+        { en: 'SECM', zh: 'SECM' },
+        { en: '3D Printing', zh: '3D 打印' },
+        { en: 'Reactor Cell', zh: '反应电解池' },
+      ],
+      status: { en: 'Yale summer research (2026)', zh: '耶鲁暑期研究（2026）' },
     },
   },
 ]
