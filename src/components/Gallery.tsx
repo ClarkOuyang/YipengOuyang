@@ -96,12 +96,19 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
 
         {/* Right: text content (wider now that the photo is smaller). */}
         <div className="min-w-0 flex-1">
-          <h3 className="font-serif text-lg font-semibold leading-snug text-brand-900 dark:text-white">
-            {resolveText(p.title, lang)}
-          </h3>
-          <p className="mt-1 text-xs font-medium text-olive-600 dark:text-olive-400">
-            {p.period}
-          </p>
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+            <h3 className="font-serif text-lg font-semibold leading-snug text-brand-900 dark:text-white">
+              {resolveText(p.title, lang)}
+            </h3>
+            <p className="shrink-0 text-xs font-medium text-olive-600 dark:text-olive-400">
+              {p.period}
+            </p>
+          </div>
+          {p.detail?.status && (
+            <p className="mt-1 text-sm italic text-slate-500 dark:text-slate-400">
+              {resolveText(p.detail.status, lang)}
+            </p>
+          )}
           {hasDetail && (
             <button
               type="button"
@@ -116,11 +123,6 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
 
           {hasDetail && open && p.detail && (
             <div className="mt-3 border-t border-slate-100 pt-3 dark:border-slate-800">
-              {p.detail.status && (
-                <span className="mb-2 inline-block rounded-full border border-olive-200 bg-olive-50 px-2.5 py-0.5 text-[11px] font-semibold text-olive-700 dark:border-olive-700 dark:bg-olive-800/40 dark:text-olive-200">
-                  {resolveText(p.detail.status, lang)}
-                </span>
-              )}
               <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
                 {resolveText(p.detail.description, lang)}
               </p>
