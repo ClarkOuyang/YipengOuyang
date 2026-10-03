@@ -4,15 +4,6 @@ import { ExternalLink } from 'lucide-react'
 import { useLang, resolveText } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
 
-const TAG_COLORS: Record<string, string> = {
-  Publication: 'bg-brand-100 text-brand-700 dark:bg-brand-800/60 dark:text-brand-100',
-  Talk: 'bg-olive-100 text-olive-700 dark:bg-olive-800/60 dark:text-olive-100',
-  Award: 'bg-amber-100 text-amber-700 dark:bg-amber-800/50 dark:text-amber-100',
-  Experience: 'bg-sky-100 text-sky-700 dark:bg-sky-800/50 dark:text-sky-100',
-  Research: 'bg-violet-100 text-violet-700 dark:bg-violet-800/50 dark:text-violet-100',
-  Education: 'bg-teal-100 text-teal-700 dark:bg-teal-800/50 dark:text-teal-100',
-}
-
 /** Minimal **bold** markdown renderer — no HTML injection, just text runs. */
 function renderBold(text: string) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g)
@@ -53,16 +44,6 @@ export default function News() {
                 {item.date}
               </time>
               <div className="flex flex-wrap items-baseline gap-2">
-                {item.tag && (
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-[11px] font-semibold ${
-                      TAG_COLORS[resolveText(item.tag, lang)] ??
-                      'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300'
-                    }`}
-                  >
-                    {resolveText(item.tag, lang)}
-                  </span>
-                )}
                 <span className="font-medium text-slate-800 dark:text-slate-100">
                   {resolveText(item.title, lang)}
                 </span>

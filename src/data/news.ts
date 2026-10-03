@@ -17,7 +17,6 @@ export const news: NewsItem[] = [
       en: 'Joined the Shu Hu Lab at **Yale University** to work on scalable perovskite–Si photoelectrocatalysis for water splitting and designed PEC / SECM cells via 3D printing.',
       zh: '加入**耶鲁大学** Shu Hu 课题组，研究可放大的钙钛矿—硅光电催化水分解，并通过 3D 打印设计 PEC / SECM 电解池。',
     },
-    tag: { en: 'Experience', zh: '经历' },
   },
   {
     id: 'research-2025',
@@ -31,7 +30,6 @@ export const news: NewsItem[] = [
       en: 'Joined Prof. Zhaosheng Li and Prof. Jianyong Feng, affiliated with Group of Prof. Zhigang Zou at **Nanjing University**.',
       zh: '加入李朝升教授与冯建勇教授团队，隶属于**南京大学**邹志刚教授课题组。',
     },
-    tag: { en: 'Research', zh: '科研' },
   },
   {
     id: 'sunwoda-2025',
@@ -45,7 +43,6 @@ export const news: NewsItem[] = [
       en: 'Conducted electrochemical performance and safety evaluation of lithium-ion batteries and assisted CNAS certification documentation at **Sunwoda Energy Technology Co.**',
       zh: '在**欣旺达能源科技**开展锂离子电池电化学性能与安全性评估，并协助 CNAS 认证技术文档整理。',
     },
-    tag: { en: 'Experience', zh: '经历' },
   },
   {
     id: 'nju-2023',
@@ -56,6 +53,5 @@ export const news: NewsItem[] = [
       zh: '进入南京大学学习',
     },
     description: { en: 'Major: New Energy Science and Engineering at **Nanjing University**.', zh: '专业：**南京大学**新能源科学与工程。' },
-    tag: { en: 'Education', zh: '教育' },
   },
 ]
