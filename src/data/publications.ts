@@ -14,6 +14,7 @@ export const publications: Publication[] = [
       zh: 'Sb 掺杂 Co₃O₄ 加速质子转移，助力可持续质子交换膜电解',
     },
     authors: ['Yipeng Ouyang', 'Mingyue Zhao', 'Jianyong Feng', 'Zhaosheng Li', 'Zhigang Zou'],
+    equalContribution: ['Yipeng Ouyang', 'Mingyue Zhao'],
     venue: {
       en: 'In preparation — targeting Advanced Materials or Angewandte Chemie',
       zh: '投稿中，计划投 Advanced Materials 或 Angewandte Chemie',

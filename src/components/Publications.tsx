@@ -28,7 +28,7 @@ const LINK_LABELS: Record<PubLinkType, string> = {
   doi: 'link.doi',
 }
 
-function AuthorList({ authors }: { authors: string[] }) {
+function AuthorList({ authors, equal = [] }: { authors: string[]; equal?: string[] }) {
   const highlightName = profile.name
   return (
     <span className="text-sm text-slate-600 dark:text-slate-400">
@@ -43,6 +43,7 @@ function AuthorList({ authors }: { authors: string[] }) {
           >
             {a}
           </span>
+          {equal.includes(a) && <sup className="ml-px">†</sup>}
           {i < authors.length - 1 ? ', ' : ''}
         </span>
       ))}
@@ -77,7 +78,12 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
           </div>
 
           <p className="mt-1">
-            <AuthorList authors={pub.authors} />
+            <AuthorList authors={pub.authors} equal={pub.equalContribution} />
+            {pub.equalContribution && pub.equalContribution.length > 1 && (
+              <span className="ml-2 text-xs text-slate-400">
+                {lang === 'zh' ? '† 共同第一作者' : '† Equal contribution'}
+              </span>
+            )}
           </p>
           <p className="mt-0.5 text-sm italic text-slate-500 dark:text-slate-400">
             {resolveText(pub.venue, lang)}

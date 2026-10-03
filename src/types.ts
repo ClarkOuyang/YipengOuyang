@@ -100,6 +100,8 @@ export interface Publication {
   title: Bilingual
   /** Author names. The name matching Profile.name is auto-highlighted. */
   authors: string[]
+  /** Authors who contributed equally (co-first authors); marked with † and a footnote. */
+  equalContribution?: string[]
   /** Venue / journal / conference name. */
   venue: Bilingual
   year: number
