@@ -67,14 +67,14 @@ export const featuredProjects: FeaturedProject[] = [
   },
   {
     id: 'proj-ald',
-    title: { en: 'ALD Coating & Semiconductor Processing', zh: 'ALD 镀膜与半导体加工' },
+    title: { en: 'ALD, PVD Coating and Si Processing', zh: 'ALD、PVD 镀膜与硅加工' },
     period: 'Yale, 2026',
     sortKey: '2026-09',
     photo: 'projects/ald-grid-v2.jpg',
     detail: {
       description: {
-        en: 'Fabricated ALD-coated solar cell samples for external collaborators. Silicon heterojunction cells were chosen over TOPCon cells because of their higher open-circuit voltage (Voc) and smoother surface, which is better suited to subsequent perovskite coating. After the surface busbars were removed by etching in an SC-1 solution (H₂O:H₂O₂:NH₄OH = 5:1:1), 50 nm of TiO₂ was deposited on the cell by atomic layer deposition (ALD), and multiple samples were delivered to the collaborators. Through this project, completed hands-on training in silicon wafer processing and ALD, and became an independent user of the ALD system.',
-        zh: '为外部合作方制备 ALD 镀膜的太阳能电池样品。相比 TOPCon 电池，硅异质结电池的开路电压（Voc）更高、表面更平整，更适合后续的钙钛矿涂覆，因此选用了硅异质结电池。先用 SC-1 溶液（H₂O:H₂O₂:NH₄OH = 5:1:1）刻蚀去除表面 busbar，再通过原子层沉积（ALD）在电池上沉积 50 nm TiO₂，并向合作方交付了多批样品。通过这个项目，完成了硅片加工与 ALD 的实操培训，现在可以独立操作 ALD 设备。',
+        en: 'Fabricated ALD-coated solar cell samples for external collaborators. Silicon heterojunction cells were chosen over TOPCon cells because of their higher open-circuit voltage (Voc) and smoother surface, which is better suited to subsequent perovskite coating. After the surface busbars were removed by etching in an SC-1 solution (H₂O:H₂O₂:NH₄OH = 5:1:1), 50 nm of TiO₂ was deposited on the cell by atomic layer deposition (ALD), and multiple samples were delivered to the collaborators. Through this project, completed hands-on training in silicon wafer processing and ALD, and became an independent user of the ALD system.\n\nIn addition, 100 nm of Ni was deposited on the Si cell by physical vapor deposition (PVD) to improve the electrical contact of the electrode.',
+        zh: '为外部合作方制备 ALD 镀膜的太阳能电池样品。相比 TOPCon 电池，硅异质结电池的开路电压（Voc）更高、表面更平整，更适合后续的钙钛矿涂覆，因此选用了硅异质结电池。先用 SC-1 溶液（H₂O:H₂O₂:NH₄OH = 5:1:1）刻蚀去除表面 busbar，再通过原子层沉积（ALD）在电池上沉积 50 nm TiO₂，并向合作方交付了多批样品。通过这个项目，完成了硅片加工与 ALD 的实操培训，现在可以独立操作 ALD 设备。\n\n此外，还通过物理气相沉积（PVD）在硅电池上沉积了 100 nm Ni，用于改善电极的电接触。',
       },
       keywords: [
         { en: 'Atomic Layer Deposition', zh: '原子层沉积' },
