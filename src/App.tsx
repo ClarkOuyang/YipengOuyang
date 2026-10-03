@@ -12,7 +12,7 @@ import Footer from './components/Footer'
 
 export default function App() {
   const { theme, toggleTheme } = useTheme()
-  useAccent() // applies the saved/selected accent color across the site
+  useAccent() // applies the site accent color
 
   return (
     <LanguageProvider>

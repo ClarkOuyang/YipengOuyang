@@ -1,5 +1,5 @@
 /* Accent color variables — default palette (green). Overridden at runtime by
-   the useAccent hook when the user picks a new color in the navbar. Values are
+   the useAccent hook, which applies the site's green accent. Values are
    space-separated RGB channels so Tailwind's rgb(var() / <alpha>) can use them. */
 :root {
   --brand-50: 237 241 247;

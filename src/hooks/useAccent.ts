@@ -1,29 +1,19 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Runtime accent color picker.
+// Site accent color.
 //
-// The user picks ONE color (the brand-500 accent). We derive a full, harmonious
+// Takes ONE color (the brand-500 accent). We derive a full, harmonious
 // shade ramp (50–950) for both `brand` and the complementary `olive` accent, and
 // write them as space-separated RGB channels onto :root CSS variables. Those
 // variables feed Tailwind's `rgb(var(--brand-NN) / <alpha-value>)` colors, so the
-// whole site re-themes instantly without a rebuild. The choice is remembered in
-// localStorage and re-applied on load.
+// whole site re-themes instantly without a rebuild.
 // ─────────────────────────────────────────────────────────────────────────────
 
 const STORAGE_KEY = 'academic-site-accent'
 
-// Preset swatches offered in the navbar panel (brand-500 values).
-export const ACCENT_PRESETS: { name: string; hex: string }[] = [
-  { name: 'Green', hex: '#3da377' },
-  { name: 'Blue', hex: '#3b82f6' },
-  { name: 'Indigo', hex: '#6366f1' },
-  { name: 'Violet', hex: '#8b5cf6' },
-  { name: 'Rose', hex: '#e11d48' },
-  { name: 'Amber', hex: '#d97706' },
-  { name: 'Teal', hex: '#0d9488' },
-  { name: 'Slate', hex: '#475569' },
-]
+// The site's accent (brand-500). The navbar color picker was removed, so this is fixed.
+const DEFAULT_ACCENT = '#3da377'
 
 // ── color math ───────────────────────────────────────────────────────────────
 
@@ -114,20 +104,14 @@ function applyAccent(baseHex: string) {
 
 // ── hook ───────────────────────────────────────────────────────────────────────
 
-function getInitialAccent(): string {
-  if (typeof window === 'undefined') return ACCENT_PRESETS[0].hex
-  return window.localStorage.getItem(STORAGE_KEY) || ACCENT_PRESETS[0].hex
-}
-
 export function useAccent() {
-  const [accent, setAccentState] = useState<string>(getInitialAccent)
-
   useEffect(() => {
-    applyAccent(accent)
-    window.localStorage.setItem(STORAGE_KEY, accent)
-  }, [accent])
-
-  const setAccent = useCallback((hex: string) => setAccentState(hex), [])
-
-  return { accent, setAccent, presets: ACCENT_PRESETS }
+    applyAccent(DEFAULT_ACCENT)
+    // Drop any color a visitor picked back when the picker existed.
+    try {
+      window.localStorage.removeItem(STORAGE_KEY)
+    } catch {
+      /* storage may be unavailable; ignore */
+    }
+  }, [])
 }
