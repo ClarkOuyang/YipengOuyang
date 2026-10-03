@@ -53,7 +53,7 @@ export const profile: Profile = {
     {
       school: { en: 'Yale University', zh: '耶鲁大学' },
       role: { en: 'Summer Research Intern', zh: '暑期科研实习生' },
-      period: 'Jul.2026 ~ Sep.2026',
+      period: 'Jul.2026 ~ Oct.2026',
       supervisorPrefix: { en: 'Supervisor: ', zh: '导师：' },
       supervisorParts: [
         {

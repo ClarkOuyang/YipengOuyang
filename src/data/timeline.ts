@@ -61,7 +61,7 @@ export const experience: TimelineItem[] = [
     organization: { en: 'Summer Research Visiting Student', zh: '暑期科研访问学生' },
     location: 'New Haven, CT, USA',
     start: 'Jul 2026',
-    end: 'Present',
+    end: 'Oct 2026',
     logo: 'logos/yale-shield.svg',
     detail: {
       bullets: [

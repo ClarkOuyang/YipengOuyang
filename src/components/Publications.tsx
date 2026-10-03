@@ -1,15 +1,12 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { publications } from '../data/publications'
 import { profile } from '../data/profile'
 import type { Publication, PubLinkType } from '../types'
 import {
-  Check,
   Code2,
-  Copy,
   ExternalLink,
   FileText,
   Presentation,
-  Quote,
   type LucideIcon,
 } from 'lucide-react'
 import { useLang, resolveText } from '../i18n/LanguageContext'
@@ -54,19 +51,6 @@ function AuthorList({ authors }: { authors: string[] }) {
 }
 
 function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
-  const [showBib, setShowBib] = useState(false)
-  const [copied, setCopied] = useState(false)
-
-  const copy = async () => {
-    try {
-      await navigator.clipboard.writeText(pub.bibtex)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1800)
-    } catch {
-      /* clipboard may be unavailable; ignore */
-    }
-  }
-
   return (
     <article className="paper-panel group relative scroll-mt-20 p-5 transition-colors hover:border-brand-300 dark:hover:border-brand-600">
       <div className="flex gap-4">
@@ -127,47 +111,7 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
                   {l.label ?? getString(LINK_LABELS[l.type], lang)}
                 </a>
               )
-            })}
-
-            <button
-              type="button"
-              onClick={() => setShowBib((s) => !s)}
-              aria-expanded={showBib}
-              className="link-btn"
-            >
-              <Quote className="h-3.5 w-3.5" />
-              {getString('link.bibtex', lang)}
-            </button>
-          </div>
-
-          {/* Expandable BibTeX */}
-          {showBib && (
-            <div className="mt-3 rounded-lg border border-slate-200 bg-slate-50 p-3 dark:border-slate-700 dark:bg-slate-900">
-              <div className="mb-1.5 flex items-center justify-between">
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-500">
-                  BibTeX
-                </span>
-                <button
-                  type="button"
-                  onClick={copy}
-                  className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-brand-600 hover:bg-brand-100 dark:text-brand-300 dark:hover:bg-brand-800/50"
-                >
-                  {copied ? (
-                    <>
-                      <Check className="h-3.5 w-3.5" /> {getString('link.copied', lang)}
-                    </>
-                  ) : (
-                    <>
-                      <Copy className="h-3.5 w-3.5" /> {getString('link.copy', lang)}
-                    </>
-                  )}
-                </button>
-              </div>
-              <pre className="overflow-x-auto whitespace-pre text-[12px] leading-relaxed text-slate-700 dark:text-slate-300">
-                <code>{pub.bibtex}</code>
-              </pre>
-            </div>
-          )}
+            })}          </div>
         </div>
       </div>
     </article>
