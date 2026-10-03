@@ -18,7 +18,7 @@ export const featuredProjects: FeaturedProject[] = [
     sortKey: '2025-02',
     photo: '', // TODO: add /public/projects/pemwe.jpg
     photos: [
-      'projects/cso-01.jpg',
+      'projects/cso-01-cropped.jpg',
       'projects/cso-02.jpg',
       'projects/cso-03.jpg',
       'projects/cso-04.jpg',
@@ -50,7 +50,7 @@ export const featuredProjects: FeaturedProject[] = [
     period: 'Yale, 2026',
     sortKey: '2026-07',
     photo: '', // TODO: add /public/projects/pec.jpg
-    photos: ['projects/pec-02.jpg', 'projects/pec-01.jpg', 'projects/pec-cad.jpg'],
+    photos: ['projects/pec-cell-16x9.jpg', 'projects/pec-samples-16x9.jpg', 'projects/pec-cad.jpg'],
     detail: {
       description: {
         en: 'Designed and assembled a sealed, modular PEC cell for a wired Si–perovskite device. Through multiple design iterations in SolidWorks, the cell was developed with a cathode compartment, a middle compartment holding the anion-exchange membrane (AEM), and an anode compartment with a back window that allows the solar cell to be illuminated. In this wired configuration, the Si–perovskite solar cell is connected to the electrodes through external wiring. The cell is clamped with 12 perimeter screws tightened to 1.5 in·lb to ensure uniform sealing. Both the cathode and anode compartments have dual inlets and dual outlets for electrolyte flow, and barbed ports keep the tubing from detaching at high pump rates. The cell was fabricated by 3D printing, and the final design showed no leakage. Flexible tubing connections allow multiple cells to be linked into a modular, scalable array.',
