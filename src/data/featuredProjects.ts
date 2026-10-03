@@ -70,7 +70,7 @@ export const featuredProjects: FeaturedProject[] = [
     title: { en: 'ALD Coating & Semiconductor Processing', zh: 'ALD 镀膜与半导体加工' },
     period: 'Yale, 2026',
     sortKey: '2026-09',
-    photo: 'projects/ald-wafers.jpg',
+    photo: 'projects/ald-grid.jpg',
     detail: {
       description: {
         en: 'Fabricated ALD-coated solar cell samples for external collaborators. Silicon heterojunction cells were chosen over TOPCon cells because of their higher open-circuit voltage (Voc) and smoother surface, which is better suited to subsequent perovskite coating. After the surface busbars were removed by etching in an SC-1 solution (H₂O:H₂O₂:NH₄OH = 5:1:1), 50 nm of TiO₂ was deposited on the cell by atomic layer deposition (ALD), and multiple samples were delivered to the collaborators. Through this project, completed hands-on training in silicon wafer processing and ALD, and became an independent user of the ALD system.',
@@ -91,7 +91,7 @@ export const featuredProjects: FeaturedProject[] = [
     sortKey: '2026-08',
     photo: '', // TODO: add /public/projects/secm.jpg
     photos: [
-      'projects/secm-cell-photos.jpg',
+      'projects/secm-cell-photos-4x3.jpg',
       'projects/secm-solid-assembly.png',
       'projects/secm-transparent-assembly.png',
       'projects/secm-01.jpg',
