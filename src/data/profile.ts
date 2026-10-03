@@ -71,7 +71,7 @@ export const profile: Profile = {
   email: 'yipeng.ouyang@yale.edu',
   emailGmail: '231880021@smail.nju.edu.cn',
   phone: '+86 13927434134',
-  phoneTW: '+886 0912841316',
+  phoneTW: '+886 0936232628',
   // Put your photo at public/images/avatar.jpg (square, ~400×400 looks best).
   photo: '/images/avatar.jpg',
   bio: [
