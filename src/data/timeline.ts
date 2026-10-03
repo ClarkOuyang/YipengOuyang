@@ -66,16 +66,20 @@ export const experience: TimelineItem[] = [
     detail: {
       bullets: [
         {
-          en: 'ALD coating for surface passivation and protection.',
-          zh: 'ALD 镀膜用于表面钝化与保护。',
+          en: 'Evaluating the electrochemical performance of NiFeOₓ OER and Pt/C HER catalysts in alkaline media, and quantifying the purity of the generated H₂.',
+          zh: '评估 NiFeOₓ OER 与 Pt/C HER 催化剂在碱性介质中的电化学性能，并定量所产生 H₂ 的纯度。',
         },
         {
-          en: 'Designed and 3D-printed an SECM reactor cell.',
-          zh: '设计并 3D 打印 SECM 反应电解池。',
+          en: 'Fabricating solar cell samples for external collaborators following hands-on training in ALD and silicon processing.',
+          zh: '在接受 ALD 与硅加工实操培训后，为外部合作方制备太阳能电池样品。',
         },
         {
-          en: 'Built a scalable perovskite-based photoelectrocatalytic (PEC) water-splitting device.',
-          zh: '搭建可放大的钙钛矿基光电催化（PEC）水分解器件。',
+          en: 'Designing and assembling a wired PEC Si–perovskite cell with robust sealing.',
+          zh: '设计并组装带引线、密封可靠的硅—钙钛矿 PEC 电池。',
+        },
+        {
+          en: 'Designing an in-situ scanning electrochemical microscopy (SECM) setup.',
+          zh: '设计原位扫描电化学显微镜（SECM）装置。',
         },
       ],
     },
