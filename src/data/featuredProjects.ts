@@ -74,7 +74,7 @@ export const featuredProjects: FeaturedProject[] = [
     title: { en: 'ALD Coating & Semiconductor Processing', zh: 'ALD 镀膜与半导体加工' },
     period: 'Yale, 2026',
     sortKey: '2026-09',
-    photo: '', // TODO: add /public/projects/ald.jpg
+    photo: 'projects/ald-wafers.jpg',
   },
   {
     id: 'proj-secm',
