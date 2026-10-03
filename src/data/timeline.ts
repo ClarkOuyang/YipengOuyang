@@ -13,7 +13,7 @@ export const education: TimelineItem[] = [
     organization: { en: 'B.S. in New Energy Science and Engineering', zh: '新能源科学与工程 学士' },
     location: 'Nanjing, China',
     start: 'Sep 2023',
-    end: 'Present',
+    end: 'Jun 2027 (expected)',
     logo: 'logos/nju-badge.webp',
     detail: {
       major: {

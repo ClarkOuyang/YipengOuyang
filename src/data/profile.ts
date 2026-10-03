@@ -26,7 +26,7 @@ export const profile: Profile = {
     {
       school: { en: 'Nanjing University', zh: '南京大学' },
       role: { en: 'Undergraduate', zh: '本科' },
-      period: 'Sep.2023 ~ Jun.2027',
+      period: 'Sep.2023 ~ Jun.2027 (expected)',
       supervisorPrefix: { en: 'Supervisor: ', zh: '导师：' },
       supervisorParts: [
         {
