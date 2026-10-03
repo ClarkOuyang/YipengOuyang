@@ -22,6 +22,7 @@ export const featuredProjects: FeaturedProject[] = [
     sortKey: '2026-08',
     photo: '', // TODO: add /public/projects/secm.jpg
     photos: [
+      'projects/secm-cell-photos.jpg',
       'projects/secm-solid-assembly.png',
       'projects/secm-transparent-assembly.png',
       'projects/secm-01.jpg',
