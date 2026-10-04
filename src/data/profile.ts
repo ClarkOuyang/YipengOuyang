@@ -93,10 +93,11 @@ export const profile: Profile = {
     },
   ],
   researchInterests: [
-    { en: 'Semiconductor Surfaces & Interfaces', zh: '半导体表面与界面' },
-    { en: 'Thin-Film Growth', zh: '薄膜生长' },
-    { en: '2D Nanomaterials', zh: '二维纳米材料' },
-    { en: 'Photovoltaic Devices', zh: '光伏器件' },
+    { en: 'Interface Stability of Energy-Conversion Materials', zh: '能量转换材料的界面稳定性' },
+    { en: 'ALD Thin Films and Surface Passivation', zh: 'ALD 薄膜与表面钝化' },
+    { en: 'Semiconductor Photoelectrodes', zh: '半导体光电极' },
+    { en: 'Electrocatalyst Durability in Acidic Media', zh: '酸性介质中电催化剂的耐久性' },
+    { en: 'In-situ Interface Characterization', zh: '原位界面表征' },
   ],
   socials: [
     { type: 'email', href: 'mailto:yipeng.ouyang@yale.edu', label: 'Email' },
