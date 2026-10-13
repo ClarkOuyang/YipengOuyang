@@ -21,5 +21,6 @@ export const honors: Honor[] = [
       en: 'College of Engineering and Applied Sciences, Nanjing University',
       zh: '南京大学工程与应用科学学院',
     },
+    date: 'May. 2025',
   },
 ]
