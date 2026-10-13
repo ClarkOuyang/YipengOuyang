@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import News from './components/News'
 import Gallery from './components/Gallery'
 import Publications from './components/Publications'
+import Honors from './components/Honors'
 import Experience from './components/Experience'
 import Interests from './components/Interests'
 import Footer from './components/Footer'
@@ -23,6 +24,7 @@ export default function App() {
           <News />
           <Gallery />
           <Publications />
+          <Honors />
           <Experience />
           <Interests />
         </main>

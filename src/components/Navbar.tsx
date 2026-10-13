@@ -14,6 +14,7 @@ const LINKS: NavLink[] = [
   { key: 'nav.news', href: '#news' },
   { key: 'nav.gallery', href: '#gallery' },
   { key: 'nav.publications', href: '#publications' },
+  { key: 'nav.honors', href: '#honors' },
   { key: 'nav.experience', href: '#experience' },
   { key: 'nav.interests', href: '#interests' },
 ]

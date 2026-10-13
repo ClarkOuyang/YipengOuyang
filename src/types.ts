@@ -181,3 +181,12 @@ export interface Interest {
   /** Optional link to a video / portfolio page for this interest. */
   link?: string
 }
+
+export interface Honor {
+  id: string
+  title: Bilingual
+  /** Awarding body, e.g. a ministry or school. */
+  issuer: Bilingual
+  /** Free-form date, e.g. "Oct. 2026". Optional. */
+  date?: string
+}
