@@ -69,8 +69,7 @@ export const profile: Profile = {
     },
   ],
   // Contact (shown under the portrait).
-  email: 'yipeng.ouyang@yale.edu',
-  emailGmail: '231880021@smail.nju.edu.cn',
+  email: '231880021@smail.nju.edu.cn',
   phone: '+86 13927434134',
   phoneTW: '+886 0936232628',
   // Put your photo at public/images/avatar.jpg (square, ~400×400 looks best).
@@ -101,7 +100,7 @@ export const profile: Profile = {
     { en: 'In-situ Interface Characterization', zh: '原位界面表征' },
   ],
   socials: [
-    { type: 'email', href: 'mailto:yipeng.ouyang@yale.edu', label: 'Email' },
+    { type: 'email', href: 'mailto:231880021@smail.nju.edu.cn', label: 'Email' },
     { type: 'cv', href: '/cv.pdf', label: 'Curriculum Vitae' },
   ],
 }
