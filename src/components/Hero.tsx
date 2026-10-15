@@ -73,6 +73,14 @@ export default function Hero() {
 
         {/* Text */}
         <div className="min-w-0">
+          {profile.nativeName && (
+            <p
+              lang="zh-Hant"
+              className="mb-1 font-serif text-2xl font-semibold tracking-[0.2em] text-brand-700 dark:text-brand-200"
+            >
+              {profile.nativeName}
+            </p>
+          )}
           <h1 className="font-serif text-4xl font-semibold text-brand-900 sm:text-[42px] dark:text-white">
             {profile.fullName ?? profile.name}
           </h1>

@@ -10,6 +10,7 @@ export const profile: Profile = {
   name: 'Yipeng Ouyang',
   firstName: 'Yipeng',
   fullName: 'Yipeng Clark Ouyang',
+  nativeName: '歐陽益鵬',
   title: {
     en: 'Undergraduate Researcher · B.S. Candidate in New Energy Science and Engineering',
     zh: '本科生研究员 · 新能源科学与工程专业学士候选人',
