@@ -1,10 +1,10 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { featuredProjects } from '../data/featuredProjects'
 import type { FeaturedProject } from '../types'
 import { useLang, resolveText } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
 import { withBase } from '../lib/url'
-import { ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronDown, ChevronLeft, ChevronRight, X } from 'lucide-react'
 
 export default function Gallery() {
   const { lang } = useLang()
@@ -23,9 +23,41 @@ export default function Gallery() {
   )
 }
 
+const ZOOM = 2.5
+
+function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      onClick={onClose}
+      className="fixed inset-0 z-[100] flex cursor-zoom-out items-center justify-center bg-black/80 p-4 sm:p-8"
+    >
+      <img src={src} alt={alt} className="max-h-full max-w-full rounded-md bg-white object-contain shadow-2xl" />
+      <button
+        type="button"
+        onClick={onClose}
+        aria-label="Close"
+        className="absolute right-4 top-4 rounded-full bg-white/90 p-2 text-slate-700 shadow hover:bg-white"
+      >
+        <X className="h-5 w-5" />
+      </button>
+    </div>
+  )
+}
+
 function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en' | 'zh' }) {
   const [open, setOpen] = useState(false)
   const [idx, setIdx] = useState(0)
+  // Hover magnifier: while a mouse is over the photo, scale it up around the cursor.
+  const [zoom, setZoom] = useState<{ x: number; y: number } | null>(null)
+  const [lightbox, setLightbox] = useState(false)
   const hasDetail = !!p.detail
 
   // Build the image list: prefer a photos gallery, then a single photo.
@@ -42,6 +74,13 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
 
   return (
     <div className="paper-panel p-4">
+      {lightbox && current && (
+        <Lightbox
+          src={withBase(current)}
+          alt={resolveText(p.title, lang)}
+          onClose={() => setLightbox(false)}
+        />
+      )}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
         {/* Left: photo frame (half the previous size), content never cropped. */}
         <div className="relative w-full shrink-0 overflow-hidden rounded-lg bg-slate-100 sm:w-[360px] dark:bg-slate-800">
@@ -49,7 +88,21 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
             <img
               src={withBase(current)}
               alt={`${resolveText(p.title, lang)} (${idx + 1}/${images.length})`}
-              className="h-44 w-full object-contain sm:h-[220px]"
+              onPointerMove={(e) => {
+                if (e.pointerType !== 'mouse') return
+                const r = e.currentTarget.getBoundingClientRect()
+                setZoom({
+                  x: ((e.clientX - r.left) / r.width) * 100,
+                  y: ((e.clientY - r.top) / r.height) * 100,
+                })
+              }}
+              onPointerLeave={() => setZoom(null)}
+              onClick={() => setLightbox(true)}
+              style={{
+                transform: zoom ? `scale(${ZOOM})` : undefined,
+                transformOrigin: zoom ? `${zoom.x}% ${zoom.y}%` : undefined,
+              }}
+              className="h-44 w-full cursor-zoom-in object-contain transition-transform duration-200 ease-out sm:h-[220px]"
             />
           ) : (
             <div className="flex h-44 w-full items-center justify-center sm:h-[220px]">
