@@ -23,8 +23,6 @@ export default function Gallery() {
   )
 }
 
-const ZOOM = 2.5
-
 function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: () => void }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose()
@@ -55,8 +53,6 @@ function Lightbox({ src, alt, onClose }: { src: string; alt: string; onClose: ()
 function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en' | 'zh' }) {
   const [open, setOpen] = useState(false)
   const [idx, setIdx] = useState(0)
-  // Hover magnifier: while a mouse is over the photo, scale it up around the cursor.
-  const [zoom, setZoom] = useState<{ x: number; y: number } | null>(null)
   const [lightbox, setLightbox] = useState(false)
   const hasDetail = !!p.detail
 
@@ -83,26 +79,14 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
       )}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
         {/* Left: photo frame (half the previous size), content never cropped. */}
-        <div className="relative w-full shrink-0 overflow-hidden rounded-lg bg-slate-100 sm:w-[360px] dark:bg-slate-800">
+        {/* On desktop, hovering grows the whole frame 2.5× over the page (covering the text is fine). */}
+        <div className="relative w-full shrink-0 origin-left overflow-hidden rounded-lg bg-slate-100 transition-transform duration-200 ease-out sm:w-[360px] sm:hover:z-40 sm:hover:scale-[2.5] sm:hover:shadow-2xl sm:hover:delay-150 dark:bg-slate-800">
           {current ? (
             <img
               src={withBase(current)}
               alt={`${resolveText(p.title, lang)} (${idx + 1}/${images.length})`}
-              onPointerMove={(e) => {
-                if (e.pointerType !== 'mouse') return
-                const r = e.currentTarget.getBoundingClientRect()
-                setZoom({
-                  x: ((e.clientX - r.left) / r.width) * 100,
-                  y: ((e.clientY - r.top) / r.height) * 100,
-                })
-              }}
-              onPointerLeave={() => setZoom(null)}
               onClick={() => setLightbox(true)}
-              style={{
-                transform: zoom ? `scale(${ZOOM})` : undefined,
-                transformOrigin: zoom ? `${zoom.x}% ${zoom.y}%` : undefined,
-              }}
-              className="h-44 w-full cursor-zoom-in object-contain transition-transform duration-200 ease-out sm:h-[220px]"
+              className="h-44 w-full cursor-zoom-in object-contain sm:h-[220px]"
             />
           ) : (
             <div className="flex h-44 w-full items-center justify-center sm:h-[220px]">
