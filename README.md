@@ -1,4 +1,4 @@
-# Academic Personal Website
+# Yipeng Ouyang’s Homepage
 
 A modern, minimalist academic personal website built with **React + Vite + TypeScript + Tailwind CSS**. Features a fixed responsive navbar, dark/light theme toggle, hero/about, news timeline, research projects, publications (with expandable + copyable BibTeX), and an education/experience timeline.
 
