@@ -77,16 +77,12 @@ export const profile: Profile = {
   photo: '/images/avatar.jpg',
   bio: [
     {
-      en: 'I am Yipeng Ouyang, an undergraduate in New Energy Science and Engineering at Nanjing University, supervised by Prof. Zhaosheng Li and Prof. Jianyong Feng in the group of Prof. Zhigang Zou. In summer 2026, I joined the group of Prof. Shu Hu at Yale University as a summer research intern. I am applying for Ph.D. programs in semiconductor materials, aiming to study how the synthesis, surfaces and interfaces of semiconductor materials govern the performance and stability of devices.',
-      zh: '我是欧阳益鹏，南京大学新能源科学与工程专业本科生，师从李朝升教授与冯建勇教授，隶属于邹志刚教授课题组。2026 年夏天，我加入耶鲁大学胡澍教授课题组进行暑期科研。我正在申请半导体材料方向的博士项目，希望研究半导体材料的合成、表面与界面如何决定器件的性能与稳定性。',
+      en: 'My name is Yipeng Ouyang, and I am a senior from Taiwan in the College of Engineering and Applied Sciences at Nanjing University, where I conduct research under the supervision of Prof. Zhaosheng Li and Prof. Jianyong Feng in Prof. Zhigang Zou’s group. This summer, I also had the opportunity to conduct research in Prof. Shu Hu’s group at Yale University.',
+      zh: '我是欧阳益鹏，来自台湾，现为南京大学工程与应用科学学院大四学生，在邹志刚教授课题组中师从李朝升教授与冯建勇教授开展研究。今年夏天，我也有机会在耶鲁大学胡澍教授课题组进行科研。',
     },
     {
-      en: 'My research began in electrocatalysis, which gave me solid training in electrochemistry and materials characterization. At Nanjing University, I engineer cobalt-based composite catalysts (CSO) that overcome the intrinsic instability of non-precious metals in acidic oxygen evolution (OER), and build durable catalyst-coated membranes for proton exchange membrane water electrolysis (PEMWE), reaching over 800 h of stable operation at 100 mA cm⁻² with a cell voltage of 1.70 V.',
-      zh: '我的科研从电催化起步，这段经历让我在电化学与材料表征方面打下了扎实的基础。在南京大学，我设计钴基复合催化剂（CSO），克服非贵金属在酸性析氧反应（OER）中的本征不稳定性，并构建用于质子交换膜水电解（PEMWE）的耐久催化层膜，在 100 mA cm⁻² 下稳定运行超过 800 小时，槽电压 1.70 V。',
-    },
-    {
-      en: 'At Yale, my work moved to semiconductors, in three parts: (1) a scalable perovskite–Si photoelectrochemical (PEC) cell for alkaline water splitting, which uses photoelectrochemistry as a way to probe how semiconductor absorbers behave in real operating conditions; (2) atomic layer deposition (ALD) of TiO₂ coatings and physical vapor deposition (PVD) of nickel for the protection, surface passivation and better contact of semiconductor electrodes; and (3) the design and 3D printing of an in-situ scanning electrochemical microscopy (SECM) cell for spatially resolved measurements.',
-      zh: '在耶鲁，我的研究转向半导体，分为三部分：（1）用于碱性光解水的可放大钙钛矿—硅光电化学（PEC）电池，借助光电化学考察半导体吸光材料在真实工况下的行为；（2）原子层沉积（ALD）TiO₂ 镀膜与物理气相沉积（PVD）镍，用于半导体电极的保护、表面钝化与改善接触；（3）设计并 3D 打印原位扫描电化学显微镜（SECM）电解池，用于空间分辨测量。',
+      en: 'My research has evolved from energy materials toward semiconductor materials and devices. At Nanjing University, my work on acidic OER catalysts for PEM water electrolysis has developed my interests in materials chemistry, interfaces, and the connection between material properties and device performance. During my summer at Yale, I extended these interests to semiconductor and photoelectrode systems, gaining experience in thin-film growth, surface passivation, silicon processing, and device design. These experiences have motivated me to further investigate how semiconductor materials and interfaces can be engineered to improve device performance.',
+      zh: '我的研究方向已从能源材料逐步转向半导体材料与器件。在南京大学，我围绕用于 PEM 水电解的酸性 OER 催化剂开展研究，这段经历让我对材料化学、界面，以及材料性质与器件性能之间的联系产生了兴趣。在耶鲁的暑期研究中，我把这些兴趣拓展到半导体与光电极体系，积累了薄膜生长、表面钝化、硅加工与器件设计方面的经验。这些经历促使我进一步研究如何通过调控半导体材料与界面来提升器件性能。',
     },
     {
       en: 'Skills\n1. Materials characterization: TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR.\n2. Si processing: ALD, PVD, BOE etching and photoresist edge sealing.\n3. Electrochemical testing: proficient in a wide range of electrochemical characterization techniques, and in analyzing reaction kinetics from the results.\n4. Device design and assembly: CAD design, 3D printing and hands-on assembly of sealed devices.',
