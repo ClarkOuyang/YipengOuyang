@@ -1,5 +1,5 @@
 import { profile } from '../data/profile'
-import { Mail, Phone, MapPin, ArrowUpRight, Flag } from 'lucide-react'
+import { Mail, Phone, MapPin, ArrowUpRight, House } from 'lucide-react'
 import { useLang, resolveText } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
 import { withBase } from '../lib/url'
@@ -27,7 +27,7 @@ export default function Hero() {
           <div className="w-full space-y-1 text-sm text-slate-600 dark:text-slate-300">
             {profile.nationality && (
               <p className="flex items-center justify-center gap-1.5 lg:justify-start">
-                <Flag className="h-4 w-4 text-olive-600 dark:text-olive-400" />
+                <House className="h-4 w-4 text-olive-600 dark:text-olive-400" />
                 {resolveText(profile.nationality, lang)}
               </p>
             )}
