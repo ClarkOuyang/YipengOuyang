@@ -66,6 +66,8 @@ export interface Profile {
   fullName?: string
   /** Native-script name shown above the H1 in the hero (e.g. Chinese characters). */
   nativeName?: string
+  /** Optional line shown under the H1, e.g. nationality. */
+  nationality?: Bilingual
   title: Bilingual
   affiliation: Bilingual
   /** Two-column affiliation blocks shown directly under the name in the hero. */

@@ -84,6 +84,11 @@ export default function Hero() {
           <h1 className="font-serif text-4xl font-semibold text-brand-900 sm:text-[42px] dark:text-white">
             {profile.fullName ?? profile.name}
           </h1>
+          {profile.nationality && (
+            <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">
+              {resolveText(profile.nationality, lang)}
+            </p>
+          )}
 
           {/* Affiliation blocks */}
           <div className="mt-5 space-y-5">
