@@ -1,5 +1,5 @@
 import { profile } from '../data/profile'
-import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
+import { Mail, Phone, MapPin, ArrowUpRight, Flag } from 'lucide-react'
 import { useLang, resolveText } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
 import { withBase } from '../lib/url'
@@ -25,6 +25,12 @@ export default function Hero() {
             />
           </div>
           <div className="w-full space-y-1 text-sm text-slate-600 dark:text-slate-300">
+            {profile.nationality && (
+              <p className="flex items-center justify-center gap-1.5 lg:justify-start">
+                <Flag className="h-4 w-4 text-olive-600 dark:text-olive-400" />
+                {resolveText(profile.nationality, lang)}
+              </p>
+            )}
             <a
               href={`mailto:${profile.email}`}
               className="flex items-center justify-center gap-1.5 hover:text-brand-700 dark:hover:text-brand-200 lg:justify-start"
@@ -84,11 +90,6 @@ export default function Hero() {
           <h1 className="font-serif text-4xl font-semibold text-brand-900 sm:text-[42px] dark:text-white">
             {profile.fullName ?? profile.name}
           </h1>
-          {profile.nationality && (
-            <p className="mt-1 text-sm font-medium text-slate-500 dark:text-slate-400">
-              {resolveText(profile.nationality, lang)}
-            </p>
-          )}
 
           {/* Affiliation blocks */}
           <div className="mt-5 space-y-5">
