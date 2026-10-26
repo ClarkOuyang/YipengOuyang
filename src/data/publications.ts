@@ -10,8 +10,8 @@ export const publications: Publication[] = [
   {
     id: 'sb-co3o4-pemwe-2026',
     title: {
-      en: 'Sb Doped Co₃O₄ Accelerating Proton Transfer for Sustainable Proton Exchange Membrane Electrolysis',
-      zh: 'Sb 掺杂 Co₃O₄ 加速质子转移，助力可持续质子交换膜电解',
+      en: 'Coupled Regulation of the Oxygen Evolution Pathway and Interfacial Proton Transfer in Sb-Doped Co₃O₄ for Acidic Water Oxidation',
+      zh: 'Sb 掺杂 Co₃O₄ 中析氧反应路径与界面质子转移的耦合调控用于酸性水氧化',
     },
     authors: ['Yipeng Ouyang', 'Mingyue Zhao', 'Jianyong Feng', 'Zhaosheng Li', 'Zhigang Zou'],
     equalContribution: ['Yipeng Ouyang', 'Mingyue Zhao'],
@@ -30,7 +30,7 @@ export const publications: Publication[] = [
     ],
     links: [],
     bibtex: `@article{ouyang2026sbco3o4,
-  title   = {Sb Doped Co3O4 Accelerating Proton Transfer for Sustainable Proton Exchange Membrane Electrolysis},
+  title   = {Coupled Regulation of the Oxygen Evolution Pathway and Interfacial Proton Transfer in Sb-Doped Co3O4 for Acidic Water Oxidation},
   author  = {Ouyang, Yipeng and Zhao, Mingyue and Feng, Jianyong and Li, Zhaosheng and Zou, Zhigang},
   journal = {In preparation},
   year    = {2026}
