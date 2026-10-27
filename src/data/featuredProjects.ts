@@ -44,8 +44,8 @@ export const featuredProjects: FeaturedProject[] = [
   {
     id: 'proj-pec',
     title: {
-      en: 'Scalable Perovskite-Based Photoelectrocatalytic (PEC) Water Splitting',
-      zh: '可放大钙钛矿基光电催化（PEC）水分解',
+      en: 'Scalable Si–Perovskite Photoelectrocatalytic (PEC) Water Splitting',
+      zh: '可放大硅—钙钛矿光电催化（PEC）水分解',
     },
     period: 'Yale, 2026',
     sortKey: '2026-07',
