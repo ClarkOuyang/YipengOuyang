@@ -13,7 +13,7 @@ export const interests: Interest[] = [
   {
     label: { en: 'Electric Guitar', zh: '电吉他' },
     icon: '🎸',
-    link: '', // TODO: add your guitar playing video link here
+    link: 'https://www.youtube.com/@ClarkOuyang',
   },
   {
     label: { en: 'Fitness / Gym', zh: '健身' },
