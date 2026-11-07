@@ -26,8 +26,8 @@ export const featuredProjects: FeaturedProject[] = [
     ],
     detail: {
       description: {
-        en: 'Engineered a cobalt-based composite catalyst (CSO) integrating transition-metal oxides to overcome the intrinsic instability of non-precious metals in acidic OER. Fabricated high-performance catalyst-coated membranes (CCM) via optimized sol–gel synthesis and ink formulation for PEMWE integration, achieving stable operation for over 800 hours at 100 mA cm⁻² with a 1.70 V cell voltage. Characterized the OER mechanism and material structure with TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR, studied surface-pH evolution using a rotating ring-disk electrode (RRDE), and resolved Co–O / Co–Co / Sb–O coordination environments by EXAFS fitting.',
-        zh: '设计了一种钴基复合催化剂（CSO），集成过渡金属氧化物以克服非贵金属在酸性 OER 中的本征不稳定性。通过优化的溶胶—凝胶合成与浆料配制制备高性能催化层膜（CCM）用于 PEMWE，在 100 mA cm⁻² 下稳定运行超过 800 小时，槽电压 1.70 V。利用 TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR 表征 OER 机理与材料结构，通过旋转环盘电极（RRDE）研究表面 pH 演变，并以 EXAFS 拟合解析 Co–O / Co–Co / Sb–O 配位环境。',
+        en: 'Engineered a cobalt-based composite catalyst (CSO) integrating transition-metal oxides to overcome the intrinsic instability of non-precious metals in acidic OER. Fabricated high-performance catalyst-coated membranes (CCM) via optimized sol–gel synthesis and ink formulation for PEMWE integration, achieving stable operation for over 500 hours at 100 mA cm⁻² with a 1.70 V cell voltage. Characterized the OER mechanism and material structure with TEM, SEM, XRD, XPS, XAS, DEMS and in-situ FTIR, studied surface-pH evolution using a rotating ring-disk electrode (RRDE), and resolved Co–O / Co–Co / Sb–O coordination environments by EXAFS fitting.',
+        zh: '设计了一种钴基复合催化剂（CSO），集成过渡金属氧化物以克服非贵金属在酸性 OER 中的本征不稳定性。通过优化的溶胶—凝胶合成与浆料配制制备高性能催化层膜（CCM）用于 PEMWE，在 100 mA cm⁻² 下稳定运行超过 500 小时，槽电压 1.70 V。利用 TEM、SEM、XRD、XPS、XAS、DEMS 与原位 FTIR 表征 OER 机理与材料结构，通过旋转环盘电极（RRDE）研究表面 pH 演变，并以 EXAFS 拟合解析 Co–O / Co–Co / Sb–O 配位环境。',
       },
       keywords: [
         { en: 'Electrocatalysis', zh: '电催化' },

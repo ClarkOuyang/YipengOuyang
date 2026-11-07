@@ -22,8 +22,8 @@ export const education: TimelineItem[] = [
       },
       bullets: [
         {
-          en: 'Designed a Sb-doped Co₃O₄ composite catalyst for acidic OER in PEMWE; >800 h stability at 100 mA cm⁻², 1.70 V cell voltage.',
-          zh: '设计用于 PEMWE 酸性 OER 的 Sb 掺杂 Co₃O₄ 复合催化剂；100 mA cm⁻² 下 >800 h 稳定，槽电压 1.70 V。',
+          en: 'Designed a Sb-doped Co₃O₄ composite catalyst for acidic OER in PEMWE; >500 h stability at 100 mA cm⁻², 1.70 V cell voltage.',
+          zh: '设计用于 PEMWE 酸性 OER 的 Sb 掺杂 Co₃O₄ 复合催化剂；100 mA cm⁻² 下 >500 h 稳定，槽电压 1.70 V。',
         },
         {
           en: 'Characterized materials with TEM/SEM/XRD/XPS/XAS/DEMS/in-situ FTIR and quantified surface pH with RRDE.',
