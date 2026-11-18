@@ -30,13 +30,15 @@ const LINK_LABELS: Record<PubLinkType, string> = {
 
 function AuthorList({ authors, equal = [] }: { authors: string[]; equal?: string[] }) {
   const highlightName = profile.name
+  const names = highlightName.split(' ')
+  const citationName = names[names.length - 1] + ', ' + names[0][0] + '.'
   return (
     <span className="text-sm text-slate-600 dark:text-slate-400">
       {authors.map((a, i) => (
-        <span key={a}>
+        <span key={i}>
           <span
             className={
-              a === highlightName
+              (a === highlightName || a === citationName)
                 ? 'font-semibold text-brand-700 underline decoration-brand-300 decoration-2 underline-offset-2 dark:text-brand-200'
                 : ''
             }
@@ -44,7 +46,7 @@ function AuthorList({ authors, equal = [] }: { authors: string[]; equal?: string
             {a}
           </span>
           {equal.includes(a) && <sup className="ml-px">†</sup>}
-          {i < authors.length - 1 ? ', ' : ''}
+          {i < authors.length - 1 ? '; ' : ''}
         </span>
       ))}
     </span>
