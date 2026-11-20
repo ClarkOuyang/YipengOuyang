@@ -13,6 +13,7 @@ import { useLang, resolveText } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
 
 const LINK_ICONS: Record<PubLinkType, LucideIcon> = {
+  request: FileText,
   pdf: FileText,
   code: Code2,
   project: ExternalLink,
@@ -21,6 +22,7 @@ const LINK_ICONS: Record<PubLinkType, LucideIcon> = {
 }
 
 const LINK_LABELS: Record<PubLinkType, string> = {
+  request: 'Request manuscript',
   pdf: 'link.pdf',
   code: 'link.code',
   project: 'link.project',
@@ -54,7 +56,7 @@ function AuthorList({ authors, equal = [] }: { authors: string[]; equal?: string
 }
 
 function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
-  const pdf = pub.links.find(link => link.type === 'pdf')
+  const manuscript = pub.links.find(link => link.type === 'request' || link.type === 'pdf')
   return (
     <article className="paper-panel group relative scroll-mt-20 p-5 transition-colors hover:border-brand-300 dark:hover:border-brand-600">
       <div className="flex gap-4">
@@ -71,8 +73,8 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start gap-2">
             <h3 className="font-serif text-base font-semibold leading-snug text-brand-900 dark:text-white">
-              {pdf ? (
-                <a href={pdf.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+              {manuscript ? (
+                <a href={manuscript.href} target={manuscript.type === 'pdf' ? '_blank' : undefined} rel="noopener noreferrer" className="hover:underline">
                   {resolveText(pub.title, lang)}
                 </a>
               ) : resolveText(pub.title, lang)}

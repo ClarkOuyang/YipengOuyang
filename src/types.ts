@@ -91,7 +91,7 @@ export interface Profile {
   socials: SocialLink[]
 }
 
-export type PubLinkType = 'pdf' | 'code' | 'project' | 'slides' | 'doi'
+export type PubLinkType = 'request' | 'pdf' | 'code' | 'project' | 'slides' | 'doi'
 
 export interface PublicationLink {
   type: PubLinkType
