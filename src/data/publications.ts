@@ -28,7 +28,7 @@ export const publications: Publication[] = [
       { en: 'Electrocatalysis', zh: '电催化' },
       { en: 'Hydrogen', zh: '制氢' },
     ],
-    links: [],
+    links: [{ type: 'pdf', href: import.meta.env.BASE_URL + 'manuscripts/cso-20261118.pdf', label: 'PDF' }],
     bibtex: `@article{ouyang2026sbco3o4,
   title   = {Coupled Regulation of the Oxygen Evolution Pathway and Interfacial Proton Transfer in Sb-Doped Co3O4 for Acidic Water Oxidation},
   author  = {Zhao, M. and Ouyang, Y. and Huang, H. and Fan, R. and Li, Z. and Zhang, Z. and Song, Z. and Feng, J. and Zou, Z. and Li, Z.},

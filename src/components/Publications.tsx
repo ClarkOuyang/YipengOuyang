@@ -54,6 +54,7 @@ function AuthorList({ authors, equal = [] }: { authors: string[]; equal?: string
 }
 
 function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
+  const pdf = pub.links.find(link => link.type === 'pdf')
   return (
     <article className="paper-panel group relative scroll-mt-20 p-5 transition-colors hover:border-brand-300 dark:hover:border-brand-600">
       <div className="flex gap-4">
@@ -70,7 +71,11 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start gap-2">
             <h3 className="font-serif text-base font-semibold leading-snug text-brand-900 dark:text-white">
-              {resolveText(pub.title, lang)}
+              {pdf ? (
+                <a href={pdf.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {resolveText(pub.title, lang)}
+                </a>
+              ) : resolveText(pub.title, lang)}
             </h3>
             {pub.highlight && (
               <span className="mt-0.5 shrink-0 rounded-full bg-olive-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-olive-700 dark:bg-olive-800/50 dark:text-olive-200">

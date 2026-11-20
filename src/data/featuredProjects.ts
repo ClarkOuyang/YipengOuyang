@@ -18,11 +18,12 @@ export const featuredProjects: FeaturedProject[] = [
     sortKey: '2025-02',
     photo: '', // TODO: add /public/projects/pemwe.jpg
     photos: [
-      'projects/cso-01-cropped.jpg',
-      'projects/cso-02.jpg',
-      'projects/cso-03.jpg',
-      'projects/cso-04.jpg',
-      'projects/cso-05.jpg',
+      'projects/cso-20261118-fig1.png',
+      'projects/cso-20261118-fig2.png',
+      'projects/cso-20261118-fig3.png',
+      'projects/cso-20261118-fig4.png',
+      'projects/cso-20261118-fig5.png',
+      'projects/cso-20261118-fig6.png',
     ],
     detail: {
       description: {
