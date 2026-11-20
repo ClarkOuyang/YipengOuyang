@@ -77,19 +77,17 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
           onClose={() => setLightbox(false)}
         />
       )}
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
-        {/* Left: photo frame (half the previous size), content never cropped. */}
-        {/* On desktop, hovering grows the whole frame 2.5× over the page (covering the text is fine). */}
-        <div className="relative w-full shrink-0 origin-left overflow-hidden rounded-lg bg-slate-100 transition-transform duration-200 ease-out sm:w-[360px] sm:hover:z-40 sm:hover:scale-[2.5] sm:hover:shadow-2xl sm:hover:delay-150 dark:bg-slate-800">
+      <div className="flex flex-col gap-5 xl:flex-row xl:items-start">
+        <div className="relative mx-auto aspect-[18/11] w-full max-w-[720px] shrink-0 overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800 xl:mx-0 xl:w-[min(65%,720px)]">
           {current ? (
             <img
               src={withBase(current)}
               alt={`${resolveText(p.title, lang)} (${idx + 1}/${images.length})`}
               onClick={() => setLightbox(true)}
-              className="h-44 w-full cursor-zoom-in object-contain sm:h-[220px]"
+              className="h-full w-full cursor-zoom-in object-contain"
             />
           ) : (
-            <div className="flex h-44 w-full items-center justify-center sm:h-[220px]">
+            <div className="flex h-full w-full items-center justify-center">
               <span className="text-xs font-medium uppercase tracking-wide text-slate-400">
                 {getString('gallery.photoPending', lang)}
               </span>
@@ -131,9 +129,8 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
           )}
         </div>
 
-        {/* Right: text content (wider now that the photo is smaller). */}
         <div className="min-w-0 flex-1">
-          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
+          <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4 xl:flex-col xl:gap-1 2xl:flex-row">
             <h3 className="font-serif text-lg font-semibold leading-snug text-brand-900 dark:text-white">
               {resolveText(p.title, lang)}
             </h3>

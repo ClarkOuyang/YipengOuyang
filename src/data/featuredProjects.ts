@@ -18,11 +18,11 @@ export const featuredProjects: FeaturedProject[] = [
     sortKey: '2025-02',
     photo: '', // TODO: add /public/projects/pemwe.jpg
     photos: [
+      'projects/cso-20261118-fig5.png',
       'projects/cso-20261118-fig1.png',
       'projects/cso-20261118-fig2.png',
       'projects/cso-20261118-fig3.png',
       'projects/cso-20261118-fig4.png',
-      'projects/cso-20261118-fig5.png',
       'projects/cso-20261118-fig6.png',
     ],
     detail: {
@@ -37,8 +37,8 @@ export const featuredProjects: FeaturedProject[] = [
         { en: 'Characterization', zh: '材料表征' },
       ],
       status: {
-        en: 'Manuscript in preparation (joint first author)',
-        zh: '论文在投（共同一作）',
+        en: 'Manuscript in preparation',
+        zh: '论文在投',
       },
     },
   },
