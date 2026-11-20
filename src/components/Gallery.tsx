@@ -78,16 +78,16 @@ function ProjectCard({ project: p, lang }: { project: FeaturedProject; lang: 'en
         />
       )}
       <div className="flex flex-col gap-5 xl:flex-row xl:items-start">
-        <div className="relative mx-auto aspect-[18/11] w-full max-w-[720px] shrink-0 overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800 xl:mx-0 xl:w-[min(65%,720px)]">
+        <div className="relative mx-auto self-start w-full max-w-[720px] shrink-0 overflow-hidden rounded-lg bg-slate-100 dark:bg-slate-800 xl:mx-0 xl:w-[min(65%,720px)]">
           {current ? (
             <img
               src={withBase(current)}
               alt={`${resolveText(p.title, lang)} (${idx + 1}/${images.length})`}
               onClick={() => setLightbox(true)}
-              className="h-full w-full cursor-zoom-in object-contain"
+              className="block h-auto w-full cursor-zoom-in"
             />
           ) : (
-            <div className="flex h-full w-full items-center justify-center">
+            <div className="flex aspect-[18/11] w-full items-center justify-center">
               <span className="text-xs font-medium uppercase tracking-wide text-slate-400">
                 {getString('gallery.photoPending', lang)}
               </span>
