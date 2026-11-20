@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useRef } from 'react'
 import { publications } from '../data/publications'
 import { profile } from '../data/profile'
 import type { Publication, PubLinkType } from '../types'
@@ -22,7 +22,7 @@ const LINK_ICONS: Record<PubLinkType, LucideIcon> = {
 }
 
 const LINK_LABELS: Record<PubLinkType, string> = {
-  request: 'Request manuscript',
+  request: 'Manuscript',
   pdf: 'link.pdf',
   code: 'link.code',
   project: 'link.project',
@@ -56,7 +56,11 @@ function AuthorList({ authors, equal = [] }: { authors: string[]; equal?: string
 }
 
 function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
-  const manuscript = pub.links.find(link => link.type === 'request' || link.type === 'pdf')
+  const request = pub.links.find(link => link.type === 'request')
+  const pdf = pub.links.find(link => link.type === 'pdf')
+  const dialog = useRef<HTMLDialogElement>(null)
+  const title = resolveText(pub.title, lang)
+  const openRequest = () => dialog.current?.showModal()
   return (
     <article className="paper-panel group relative scroll-mt-20 p-5 transition-colors hover:border-brand-300 dark:hover:border-brand-600">
       <div className="flex gap-4">
@@ -73,11 +77,15 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
         <div className="min-w-0 flex-1">
           <div className="flex items-start gap-2">
             <h3 className="font-serif text-base font-semibold leading-snug text-brand-900 dark:text-white">
-              {manuscript ? (
-                <a href={manuscript.href} target={manuscript.type === 'pdf' ? '_blank' : undefined} rel="noopener noreferrer" className="hover:underline">
-                  {resolveText(pub.title, lang)}
+              {request ? (
+                <button type="button" onClick={openRequest} className="text-left hover:underline">
+                  {title}
+                </button>
+              ) : pdf ? (
+                <a href={pdf.href} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  {title}
                 </a>
-              ) : resolveText(pub.title, lang)}
+              ) : title}
             </h3>
             {pub.highlight && (
               <span className="mt-0.5 shrink-0 rounded-full bg-olive-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-olive-700 dark:bg-olive-800/50 dark:text-olive-200">
@@ -114,6 +122,14 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
           <div className="mt-3 flex flex-wrap items-center gap-2">
             {pub.links.map((l) => {
               const Icon = LINK_ICONS[l.type]
+              if (l.type === 'request') {
+                return (
+                  <button key={l.href} type="button" onClick={openRequest} className="link-btn">
+                    <Icon className="h-3.5 w-3.5" />
+                    Manuscript
+                  </button>
+                )
+              }
               return (
                 <a
                   key={l.type + l.href}
@@ -130,6 +146,39 @@ function PubCard({ pub, lang }: { pub: Publication; lang: 'en' | 'zh' }) {
           </div>
         </div>
       </div>
+      {request && (
+        <dialog
+          ref={dialog}
+          aria-labelledby={`${pub.id}-request-title`}
+          className="m-auto w-[calc(100%-2rem)] max-w-md rounded-lg bg-white p-6 text-slate-900 shadow-xl backdrop:bg-black/50 dark:bg-slate-900 dark:text-white"
+        >
+          <h4 id={`${pub.id}-request-title`} className="font-serif text-xl font-semibold">
+            Manuscript
+          </h4>
+          <p className="mt-2 text-sm">{title}</p>
+          <form action={request.href} method="POST" className="mt-4 space-y-4">
+            <input type="hidden" name="_subject" value={`Manuscript request: ${title}`} />
+            <input type="hidden" name="manuscript" value={title} />
+            <label className="block text-sm font-medium">
+              Your email
+              <input
+                type="email"
+                name="email"
+                autoComplete="email"
+                required
+                className="mt-1 block w-full rounded-md border border-slate-400 bg-transparent px-3 py-2"
+              />
+            </label>
+            <p className="text-xs text-slate-600 dark:text-slate-300">
+              FormSubmit forwards your email address and request to Yipeng Ouyang.
+            </p>
+            <div className="flex justify-end gap-2">
+              <button type="button" onClick={() => dialog.current?.close()} className="link-btn">Cancel</button>
+              <button type="submit" className="link-btn">Confirm</button>
+            </div>
+          </form>
+        </dialog>
+      )}
     </article>
   )
 }
