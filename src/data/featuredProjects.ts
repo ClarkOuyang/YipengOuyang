@@ -11,8 +11,8 @@ export const featuredProjects: FeaturedProject[] = [
   {
     id: 'proj-pemwe',
     title: {
-      en: 'Sb-Doped Co₃O₄ for Proton Exchange Membrane Water Electrolysis (PEMWE)',
-      zh: 'Sb 掺杂 Co₃O₄ 质子交换膜水电解（PEMWE）',
+      en: 'Coupled Regulation of the Oxygen Evolution Pathway and Interfacial Proton Transfer in Sb-Doped Co₃O₄ for Acidic Water Oxidation',
+      zh: 'Sb 掺杂 Co₃O₄ 中析氧反应路径与界面质子转移的耦合调控用于酸性水氧化',
     },
     period: 'Nanjing University, 2025',
     sortKey: '2025-02',
