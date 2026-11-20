@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Globe, Menu, Moon, Sun, X } from 'lucide-react'
+import { Menu, Moon, Sun, X } from 'lucide-react'
 import { profile } from '../data/profile'
 import { useLang } from '../i18n/LanguageContext'
 import { getString } from '../i18n/strings'
@@ -29,7 +29,7 @@ export default function Navbar({
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeHref, setActiveHref] = useState(LINKS[0].href)
-  const { lang, toggleLang } = useLang()
+  const { lang } = useLang()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8)
@@ -104,13 +104,11 @@ export default function Navbar({
               {getString(item.key, lang)}
             </a>
           ))}
-          <LangToggle lang={lang} onToggle={toggleLang} />
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         </div>
 
         {/* Mobile controls */}
         <div className="flex items-center gap-1 md:hidden">
-          <LangToggle lang={lang} onToggle={toggleLang} />
           <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           <button
             type="button"
@@ -146,27 +144,6 @@ export default function Navbar({
         </div>
       )}
     </header>
-  )
-}
-
-function LangToggle({
-  lang,
-  onToggle,
-}: {
-  lang: 'en' | 'zh'
-  onToggle: () => void
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onToggle}
-      aria-label={getString('nav.toggleLang', lang)}
-      title={getString('nav.toggleLang', lang)}
-      className="ml-1 flex items-center gap-1 rounded-md border border-slate-200 px-2.5 py-2 text-sm font-semibold text-slate-600 transition-colors hover:border-brand-400 hover:text-brand-700 dark:border-slate-700 dark:text-slate-300 dark:hover:border-brand-500 dark:hover:text-white"
-    >
-      <Globe className="h-4 w-4" />
-      {lang === 'en' ? '中' : 'EN'}
-    </button>
   )
 }
 
